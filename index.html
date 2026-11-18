@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Unit29有声预习" />
+  <title>Unit 29 碳化合物的命名及物理性质 · 有声互动预习课 | Mastering Chemistry</title>
+  <style>
+    :root {
+      --bg-app: #f1f5f9;
+      --bg-card: #ffffff;
+      --bg-subtle: #f8fafc;
+      --text-main: #0f172a;
+      --text-sec: #334155;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --primary-soft: #eef2ff;
+
+      --teal: #0d9488;
+      --teal-soft: #f0fdfa;
+      --amber: #d97706;
+      --amber-soft: #fffbeb;
+      --rose: #e11d48;
+      --rose-soft: #fff1f2;
+      --emerald: #059669;
+      --emerald-soft: #ecfdf5;
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg-app);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 15.5px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 108px;
+    }
+
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #4f46e5, #0d9488);
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.25;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--border-strong);
+      background: var(--bg-subtle);
+      color: var(--text-sec);
+      transition: all 0.15s;
+      cursor: pointer;
+    }
+
+    .pill-link:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-soft);
+    }
+
+    .pill-link.primary-pill {
+      background: var(--primary-soft);
+      border-color: #c7d2fe;
+      color: var(--primary-dark);
+    }
+
+    .ep-strip-wrap {
+      max-width: 1440px;
+      margin: 14px auto 0;
+      padding: 0 18px;
+    }
+
+    .ep-strip {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(185px, 1fr));
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .ep-tab {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+      position: relative;
+    }
+
+    .ep-tab:hover {
+      border-color: #a5b4fc;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ep-tab.active {
+      border-color: var(--primary);
+      background: linear-gradient(180deg, #eef2ff 0%, #ffffff 100%);
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.14);
+    }
+
+    .ep-tab-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .ep-done-dot {
+      font-size: 11px;
+      color: var(--emerald);
+      background: var(--emerald-soft);
+      padding: 1px 6px;
+      border-radius: 99px;
+      font-weight: 700;
+    }
+
+    .ep-tab-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .ep-tab-meta {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .classroom-grid {
+      max-width: 1440px;
+      margin: 14px auto 24px;
+      padding: 0 18px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.34fr) minmax(360px, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    @media (max-width: 1060px) {
+      .classroom-grid { grid-template-columns: 1fr; }
+      .ep-strip { grid-template-columns: repeat(6, 220px); }
+    }
+
+    .blackboard-pane {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .ep-hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ep-hero-kicker {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .ep-hero-title {
+      margin: 0 0 4px;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .ep-hero-en {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .ep-goal-box {
+      background: var(--bg-subtle);
+      border-left: 3.5px solid var(--primary);
+      padding: 8px 12px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13.5px;
+      color: var(--text-sec);
+      margin-bottom: 10px;
+    }
+
+    .term-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .term-chip {
+      font-size: 12px;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 999px;
+      padding: 3px 10px;
+      color: #1e293b;
+    }
+
+    .term-chip b {
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    .board-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px 18px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .board-card.is-active-board {
+      border-color: var(--primary);
+      box-shadow: 0 10px 28px rgba(79, 70, 229, 0.14);
+      background: #ffffff;
+    }
+
+    .board-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .board-tag-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .board-tag {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    .board-card.is-active-board .board-tag {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .live-pill {
+      display: none;
+      align-items: center;
+      gap: 5px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--emerald);
+      background: var(--emerald-soft);
+      border: 1px solid #a7f3d0;
+      padding: 2px 8px;
+      border-radius: 999px;
+      animation: pulseGlow 1.8s infinite;
+    }
+
+    .board-card.is-active-board .live-pill {
+      display: inline-flex;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.68; }
+    }
+
+    .board-jump-btn {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      border: 1px solid #c7d2fe;
+      border-radius: 999px;
+      padding: 4px 11px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .board-jump-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .board-title {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .board-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 720px) {
+      .board-grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .b-box {
+      border-radius: 10px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+    }
+
+    .b-amber { background: #fffbeb; border-color: #fde68a; }
+    .b-blue  { background: #eff6ff; border-color: #bfdbfe; }
+    .b-rose  { background: #fff1f2; border-color: #fecdd3; }
+    .b-teal  { background: #f0fdfa; border-color: #99f6e4; }
+
+    .b-box-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    .b-eq {
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      border-radius: 8px;
+      padding: 8px 11px;
+      font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0f172a;
+      margin-bottom: 7px;
+      overflow-x: auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .b-points {
+      margin: 6px 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: var(--text-sec);
+    }
+
+    .b-points li { margin-bottom: 4px; }
+
+    .b-quote {
+      background: linear-gradient(90deg, #eef2ff, #f8fafc);
+      border-left: 4px solid var(--primary);
+      padding: 10px 14px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 10px;
+    }
+
+    .b-quote-en {
+      font-size: 13.3px;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+
+    .b-quote-zh {
+      font-size: 13px;
+      color: #0f172a;
+    }
+
+    .b-scheme {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 10px;
+      padding: 11px 14px;
+      overflow-x: auto;
+      margin-bottom: 8px;
+    }
+
+    .b-scheme pre {
+      margin: 0;
+      font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+      font-size: 12.5px;
+      line-height: 1.54;
+      color: #e2e8f0;
+    }
+
+    .b-mini-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.8px;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .b-mini-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      text-align: left;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+    }
+
+    .b-mini-table td {
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+      color: var(--text-sec);
+    }
+
+    .b-note {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 7px 11px;
+      font-size: 12.8px;
+      color: #92400e;
+    }
+
+    .b-tip-text {
+      margin: 0;
+      font-size: 13px;
+      color: var(--text-sec);
+    }
+
+    .board-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    code {
+      font-family: "SF Mono", "Menlo", monospace;
+      font-size: 0.92em;
+      background: rgba(15, 23, 42, 0.06);
+      padding: 1px 5px;
+      border-radius: 4px;
+      color: #be123c;
+    }
+
+    .quiz-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .quiz-head {
+      font-size: 15.5px;
+      font-weight: 800;
+      margin: 0 0 12px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .q-item {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+
+    .q-item:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .q-stem {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .q-opts {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .q-opt-btn {
+      text-align: left;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg-subtle);
+      font-size: 13.5px;
+      color: var(--text-sec);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .q-opt-btn:hover {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+    }
+
+    .q-opt-btn.correct {
+      background: var(--emerald-soft);
+      border-color: var(--emerald);
+      color: #065f46;
+      font-weight: 700;
+    }
+
+    .q-opt-btn.wrong {
+      background: var(--rose-soft);
+      border-color: var(--rose);
+      color: #9f1239;
+    }
+
+    .q-exp {
+      display: none;
+      margin-top: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      font-size: 13px;
+      color: #166534;
+    }
+
+    /* Right Pane: Single-Teacher Structured Lecture Stream */
+    .transcript-pane {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 72px;
+      max-height: calc(100vh - 184px);
+    }
+
+    @media (max-width: 1060px) {
+      .transcript-pane {
+        position: static;
+        max-height: none;
+      }
+    }
+
+    .transcript-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .transcript-title {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .auto-scroll-btn {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg-subtle);
+      color: var(--text-sec);
+      cursor: pointer;
+    }
+
+    .auto-scroll-btn.on {
+      background: var(--primary-soft);
+      border-color: #a5b4fc;
+      color: var(--primary-dark);
+    }
+
+    .transcript-list {
+      padding: 14px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .turn-bubble {
+      border-radius: 12px;
+      padding: 11px 13px;
+      border: 1.5px solid #e2e8f0;
+      border-left-width: 4px;
+      background: #f8fafc;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      position: relative;
+    }
+
+    .turn-bubble.role-concept { border-left-color: #4f46e5; }
+    .turn-bubble.role-example { border-left-color: #0d9488; background: #f8fdfa; }
+    .turn-bubble.role-trap    { border-left-color: #e11d48; background: #fff9fa; }
+    .turn-bubble.role-summary { border-left-color: #059669; background: #f6fef9; }
+
+    .turn-bubble:hover {
+      border-color: #a5b4fc;
+      transform: translateX(1px);
+    }
+
+    .turn-bubble.active-turn {
+      background: #eef2ff;
+      border-color: var(--primary);
+      border-left-width: 4.5px;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.14);
+    }
+
+    .turn-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+
+    .speaker-name {
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--primary-dark);
+    }
+
+    .role-trap .speaker-name { color: #be123c; }
+    .role-example .speaker-name { color: #0f766e; }
+    .role-summary .speaker-name { color: #047857; }
+
+    .turn-time {
+      font-family: "SF Mono", "Menlo", monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid #e2e8f0;
+      padding: 1px 6px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .turn-text {
+      font-size: 14px;
+      line-height: 1.64;
+      color: var(--text-main);
+    }
+
+    /* Sticky Bottom Audio Dock */
+    .audio-dock {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 120;
+      background: rgba(15, 23, 42, 0.96);
+      backdrop-filter: blur(14px);
+      color: #f8fafc;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 10px 20px 12px;
+      box-shadow: 0 -8px 28px rgba(15, 23, 42, 0.25);
+    }
+
+    .dock-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .scrubber-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .time-lbl {
+      font-family: "SF Mono", "Menlo", monospace;
+      font-size: 12px;
+      color: #cbd5e1;
+      min-width: 44px;
+    }
+
+    .scrubber-wrap {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    #seek-slider {
+      width: 100%;
+      accent-color: #818cf8;
+      cursor: pointer;
+      height: 6px;
+    }
+
+    .controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .ctrl-left, .ctrl-center, .ctrl-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .now-playing-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #e2e8f0;
+      max-width: 360px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .dock-btn {
+      background: rgba(255, 255, 255, 0.1);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      padding: 5px 11px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .dock-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .play-main-btn {
+      background: #818cf8;
+      color: #0f172a;
+      border: none;
+      border-radius: 999px;
+      padding: 7px 20px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(129, 140, 248, 0.4);
+    }
+
+    .play-main-btn:hover {
+      background: #a5b4fc;
+    }
+
+    .speed-select {
+      background: rgba(255, 255, 255, 0.12);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .speed-select option {
+      color: #0f172a;
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand">
+      <div class="brand-badge">U29</div>
+      <div>
+        <div class="brand-title">Unit 29 碳化合物的命名及物理性质 · 双语有声互动预习课</div>
+        <div class="brand-sub">HKDSE 精工版《Mastering Chemistry》Book 3B · 陈老师沉稳主讲 + 动态声画同步黑板</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <a class="pill-link primary-pill" id="download-merged-link" href="#" download>📥 下载完整连听版 MP3 (<span id="total-dur-badge"></span>)</a>
+      <a class="pill-link" id="download-ep-link" href="#" download>🎵 下载本讲 MP3</a>
+      <a class="pill-link" id="handout-md-link" href="./Unit29_双语课堂讲义与逐字稿.md" target="_blank">📄 双语讲义逐字稿</a>
+      <a class="pill-link" id="unit31-site-link" href="../Unit31_有声互动预习课/Unit31_有声互动预习课.html">🎧 Unit 31 预习课</a>
+      <a class="pill-link" id="companion-site-link" href="../Mastering_Chemistry_Topic7_8_学习站.html">📖 打开 Topic 7 &amp; 8 闯关站</a>
+    </div>
+  </header>
+
+  <section class="ep-strip-wrap" aria-label="微课章节选择">
+    <div class="ep-strip" id="ep-strip"></div>
+  </section>
+
+  <main class="classroom-grid">
+    <!-- Left Synchronized Blackboard -->
+    <div class="blackboard-pane">
+      <div class="ep-hero-card" id="ep-hero"></div>
+      <div id="boards-container" style="display:flex; flex-direction:column; gap:14px;"></div>
+      <div class="quiz-card" id="quiz-container"></div>
+    </div>
+
+    <!-- Right Structured Lecture Stream -->
+    <aside class="transcript-pane" aria-label="课堂主讲逐字稿">
+      <div class="transcript-header">
+        <div class="transcript-title">🎙️ 陈老师双语精讲逐字稿（点击任意段跳读）</div>
+        <button class="auto-scroll-btn on" id="auto-scroll-toggle">🎯 自动跟随：开</button>
+      </div>
+      <div class="transcript-list" id="transcript-list"></div>
+    </aside>
+  </main>
+
+  <!-- Sticky Bottom Audio Player -->
+  <footer class="audio-dock">
+    <audio id="classroom-audio" preload="metadata"></audio>
+    <div class="dock-inner">
+      <div class="scrubber-row">
+        <span class="time-lbl" id="cur-time">00:00</span>
+        <div class="scrubber-wrap">
+          <input type="range" id="seek-slider" min="0" max="100" step="0.1" value="0" aria-label="播放进度" />
+        </div>
+        <span class="time-lbl" id="dur-time">00:00</span>
+      </div>
+      <div class="controls-row">
+        <div class="ctrl-left">
+          <span class="now-playing-label" id="dock-ep-label">正在加载...</span>
+        </div>
+        <div class="ctrl-center">
+          <button class="dock-btn" id="prev-ep-btn" title="上一讲">⏮ 上一讲</button>
+          <button class="dock-btn" id="rew-btn" title="后退 10 秒">⏪ -10s</button>
+          <button class="play-main-btn" id="play-btn">▶ 开始听课</button>
+          <button class="dock-btn" id="fwd-btn" title="前进 10 秒">+10s ⏩</button>
+          <button class="dock-btn" id="next-ep-btn" title="下一讲">下一讲 ⏭</button>
+        </div>
+        <div class="ctrl-right">
+          <label for="speed-select" style="font-size:12px;color:#cbd5e1;">语速</label>
+          <select class="speed-select" id="speed-select">
+            <option value="0.85">0.85x 慢速细听</option>
+            <option value="1" selected>1.0x 标准课堂</option>
+            <option value="1.15">1.15x 轻快预习</option>
+            <option value="1.25">1.25x 高效复习</option>
+            <option value="1.5">1.5x 考前速刷</option>
+          </select>
+          <button class="dock-btn" id="autoplay-btn">🔁 连播：开</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.COURSE_DATA = {"totalDuration": 1997.52, "mergedAudioFile": "audio/00_Unit29_碳化合物的命名及物理性质_完整连听版.mp3", "episodes": [{"id": "ep1", "epNum": "第 1 讲", "code": "29.1 – 29.4", "fileSlug": "01_29.1-29.4_官能团优先序与烃及卤代烷命名", "titleZh": "官能团优先序总纲与烷、烯、卤代烷系统命名", "titleEn": "Functional Groups, IUPAC Priority Order & Naming Alkanes, Alkenes and Haloalkanes", "goal": "理解官能团（functional group）作为反应活性中心（centre of reactivity）的本质，建立多官能团 IUPAC 命名优先序全局观，攻克二烯烃保留元音 a（buta-1,3-diene）与卤代烷“先最低位次、平手看字母”双铁律。", "keyTerms": [{"en": "functional group", "zh": "官能团（活性中心）"}, {"en": "homologous series", "zh": "同系物"}, {"en": "principal functional group", "zh": "主官能团（定词尾）"}, {"en": "buta-1,3-diene", "zh": "丁-1,3-二烯（留 a）"}, {"en": "haloalkane", "zh": "卤代烷（纯前缀）"}, {"en": "phenyl group (—C₆H₅)", "zh": "苯基"}], "boards": [{"id": "b1_1", "tag": "板书 1 · 命名总纲 (29.1)", "title": "有机分子的“户口本”：官能团活性中心与 IUPAC 命名优先序总表", "html": "\n                <div class=\"b-quote\">\n                  <div class=\"b-quote-en\"><strong>Functional group（官能团）</strong> = Centre of reactivity（反应活性中心），决定同系物（<strong>homologous series</strong>）的化学性质。</div>\n                  <div class=\"b-quote-zh\">💡 <strong>多官能团户口本法则</strong>：职级最高的<strong>主官能团（principal functional group）</strong>当“户主”决定<strong>词尾后缀（suffix）</strong>，且编号必须让主官能团拿到<strong>最小位次（lowest possible locant）</strong>；其余低职级基团一律作<strong>词头前缀（prefix）</strong>按字母排队！</div>\n                </div>\n                <table class=\"b-mini-table\">\n                  <thead>\n                    <tr>\n                      <th>优先级</th>\n                      <th>同系物（Homologous series）</th>\n                      <th>特征结构</th>\n                      <th>作主官能团词尾（Suffix）</th>\n                      <th>降级作词头（Prefix）</th>\n                    </tr>\n                  </thead>\n                  <tbody>\n                    <tr>\n                      <td><strong>1（最高）</strong></td>\n                      <td>羧酸 <code>carboxylic acid</code>（及酯/酰胺）</td>\n                      <td><code>—COOH</code> (<code>—COOR'</code> / <code>—CONH₂</code>)</td>\n                      <td><code>-oic acid</code> (<code>-oate</code> / <code>-amide</code>)</td>\n                      <td>—</td>\n                    </tr>\n                    <tr>\n                      <td><strong>2 → 3</strong></td>\n                      <td>醛 <code>aldehyde</code> &gt; 酮 <code>ketone</code></td>\n                      <td><code>—CHO</code> &gt; <code>&gt;C=O</code></td>\n                      <td><code>-al</code> &gt; <code>-one</code></td>\n                      <td>—</td>\n                    </tr>\n                    <tr>\n                      <td><strong>4 → 5</strong></td>\n                      <td>醇 <code>alcohol</code> &gt; 伯胺 <code>primary amine</code></td>\n                      <td><code>—OH</code> &gt; <code>—NH₂</code></td>\n                      <td><code>-ol</code> &gt; <code>-amine</code></td>\n                      <td><code>hydroxy-</code> / <code>amino-</code></td>\n                    </tr>\n                    <tr>\n                      <td><strong>6</strong></td>\n                      <td>烯烃 <code>alkene</code></td>\n                      <td><code>&gt;C=C&lt;</code></td>\n                      <td><code>-ene</code></td>\n                      <td>—</td>\n                    </tr>\n                    <tr>\n                      <td><strong>7（纯前缀）</strong></td>\n                      <td>卤代烷 <code>haloalkane</code> / 烷基 / 苯基</td>\n                      <td><code>—F, —Cl, —Br, —I</code> / <code>—R</code> / <code>—C₆H₅</code></td>\n                      <td><strong>无词尾！（永远只作词头）</strong></td>\n                      <td><code>bromo-</code>, <code>chloro-</code>, <code>methyl-</code>, <code>phenyl-</code></td>\n                    </tr>\n                  </tbody>\n                </table>\n                ", "start": 0.25, "end": 170.47}, {"id": "b1_2", "tag": "板书 2 · 烃类进阶 (29.2–29.3)", "title": "复杂烷烃、烯烃、二烯烃保留元音 'a' 铁律与苯基（Phenyl）", "html": "\n                <div class=\"board-grid-2\">\n                  <div class=\"b-box b-amber\">\n                    <div class=\"b-box-title\">① 二烯烃 Alkadienes 保留字母 <code>a</code> 铁律</div>\n                    <div class=\"b-eq\">CH<sub>2</sub>=CH—CH=CH<sub>2</sub> &nbsp;⟶&nbsp; <strong>but<u>a</u>-1,3-diene</strong></div>\n                    <div class=\"b-eq\">CH<sub>2</sub>=C(CH<sub>3</sub>)—CH=CH<sub>2</sub> &nbsp;⟶&nbsp; <strong>2-methylbut<u>a</u>-1,3-diene</strong></div>\n                    <ul class=\"b-points\">\n                      <li>单烯烃后缀 <code>-ene</code> 以元音 <code>e</code> 开头：写 <code>but-1-ene</code>。</li>\n                      <li>二烯烃后缀 <code>-diene</code> 以辅音 <code>d</code> 开头：词干末尾<strong>必须保留元音 <code>a</code></strong>！漏写 <code>a</code> 写成 <em>but-1,3-diene</em> 直接扣分！</li>\n                    </ul>\n                  </div>\n                  <div class=\"b-box b-blue\">\n                    <div class=\"b-box-title\">② 芳香族苯基 Phenyl Group 与格式红线</div>\n                    <div class=\"b-eq\">苯 Benzene (C<sub>6</sub>H<sub>6</sub>) 去掉 1 个 H &nbsp;⟶&nbsp; <strong>phenyl- (—C<sub>6</sub>H<sub>5</sub>)</strong></div>\n                    <div class=\"b-eq\">C<sub>6</sub>H<sub>5</sub>—CH=CH<sub>2</sub> &nbsp;⟶&nbsp; <strong>phenylethene</strong>（苯乙烯）</div>\n                    <ul class=\"b-points\">\n                      <li><strong>标点红线</strong>：数字与数字之间用逗号 <code>,</code>；数字与字母之间必须加连字符 <code>-</code>；前缀与母体之间<strong>绝不留空格</strong>！</li>\n                    </ul>\n                  </div>\n                </div>\n                ", "start": 171.09, "end": 262.75}, {"id": "b1_3", "tag": "板书 3 · 卤代烷双铁律 (29.4)", "title": "卤代烷（Haloalkanes）命名：先比最低位次，平手才按英文字母决胜！", "html": "\n                <div class=\"b-scheme\">\n<pre>卤素与烷基同级，一律作词头：bromo- (b) | chloro- (c) | fluoro- (f) | iodo- (i)\n\n【铁律 ① 位次优先，字母排写法（忽略 di-, tri-！）】\n   C²H₂Br — C¹HCl₂   · 从右往左数位次组合：(1, 1, 2)  ✅ 更小！（胜过从左往右的 1, 2, 2）\n                     · 写名字按首字母排：'b' (bromo) 排在 'c' (chloro) 前面（忽略表示数量的 di-！）\n                     ══▶ 标准名称：2-bromo-1,1-dichloroethane\n\n【铁律 ② 两端位次完全平手时，字母靠前者拿小号！】\n   CH₃ — C²H(Br) — C³H(Cl) — CH₃   · 从左数：(2, 3)  |  从右数：也是 (2, 3) —— 打平手！\n                                   · 决胜局：'b' (bromo) 先于 'c' (chloro)，故给 bromo 较小的 2 号位！\n                                   ══▶ 标准名称：2-bromo-3-chlorobutane （写 3-bromo-2-chlorobutane 零分！）</pre>\n                </div>\n                <div class=\"b-note\">📌 <strong>易错提醒</strong>：排字母顺序时，<code>di-</code>、<code>tri-</code>、<code>tetra-</code> 的首字母<strong>不参与</strong>排序！所以 <code>bromo</code> 的 <code>b</code> 依然排在 <code>dichloro</code> 的 <code>c</code> 前面。</div>\n                ", "start": 263.37, "end": 366.934}], "turns": [{"speaker": "teacher", "role": "concept", "stepTag": "🎯 单元导学 · 开启 Topic 8 有机全景", "boardId": "b1_1", "displayHtml": "同学们好，欢迎来到精工版《Mastering Chemistry》Book 3B、Topic 8 的开篇第一课——<strong>Unit 29：<em>Naming and physical properties of carbon compounds</em>（碳化合物的命名及物理性质）</strong>。在 Topic 7 我们只认识了烷烃（<code>alkanes</code>）和烯烃（<code>alkenes</code>）；从本单元起，卤素、氧、氮全面登场，我们将一口气解锁八大有机家族：前四讲拿捏系统命名法，后两讲从微观作用力推演全部物理性质。", "start": 0.25, "end": 44.65}, {"speaker": "teacher", "role": "concept", "stepTag": "📐 核心概念 · 官能团与同系物", "boardId": "b1_1", "displayHtml": "请先看<strong>第 1 张板书</strong>。饱和碳氢骨架平时相当稳定；真正决定分子化学性质的特定原子或原子团称为 <strong>functional group（官能团）</strong>，即分子的<strong>反应活性中心（centre of reactivity）</strong>。拥有相同 <code>functional group</code> 且符合同一通式的化合物归入同一 <strong>homologous series（同系物）</strong>，相邻成员相差一个 <code>—CH₂—</code> 单位。", "start": 44.99, "end": 88.43}, {"speaker": "teacher", "role": "concept", "stepTag": "🏆 户口本法则 · 主官能团两大特权", "boardId": "b1_1", "displayHtml": "再看板书下方的黄金总表——<strong>IUPAC 命名优先序（Priority Order）</strong>。当一个分子含多种官能团时，职级最高的 <strong>principal functional group（主官能团）</strong>当“户主”，拥有两大特权：① 决定名称末尾的<strong>词尾后缀（suffix）</strong>；② 主碳链编号必须使它获得<strong>最小位次数字（lowest possible locant）</strong>！其余低职级基团统统降级写成<strong>词头前缀（prefix）</strong>。", "start": 88.77, "end": 129.906}, {"speaker": "teacher", "role": "concept", "stepTag": "📊 排行榜速记 · 从羧酸霸主到纯前缀", "boardId": "b1_1", "displayHtml": "顺着座次认准排行榜：霸主是 <code>carboxylic acid (-oic acid)</code> ➔ 第 2 <code>aldehyde (-al)</code> ➔ 第 3 <code>ketone (-one)</code> ➔ 第 4 <code>alcohol (-ol / hydroxy-)</code> ➔ 第 5 <code>primary amine (-amine / amino-)</code> ➔ 第 6 <code>alkene (-ene)</code>；最末第 7 档的 <code>haloalkane</code>、<code>alkyl</code> 与 <code>phenyl</code> <strong>永远没有词尾，只能作词头前缀</strong>！", "start": 130.246, "end": 170.47}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 拼写红线 · 二烯烃保留元音 a", "boardId": "b1_2", "displayHtml": "切换到<strong>第 2 张板书</strong>看 <code>29.2–29.3</code> 烃类细节。单烯烃写 <code>but-1-ene</code>，但盯紧左框的<strong>二烯烃（alkadiene）</strong>：当 4 碳链含两个双键时，必须拼作 <strong><code>buta-1,3-diene</code></strong>！因为后缀 <code>-diene</code> 以辅音字母 <code>d</code> 开头，词干末尾<strong>必须保留元音 <code>a</code></strong>！漏写 <code>a</code> 写成 <em>but-1,3-diene</em> 直接扣分；2 号碳挂甲基则为 <code>2-methylbuta-1,3-diene</code>。", "start": 171.09, "end": 220.242}, {"speaker": "teacher", "role": "concept", "stepTag": "🧩 新基团认知 · 苯基与标点红线", "boardId": "b1_2", "displayHtml": "再看板书右框，课本引入芳香族取代基——<strong>苯基（phenyl group, <code>—C₆H₅</code>）</strong>，由苯（<code>benzene, C₆H₆</code>）脱去 1 个 H 原子形成；乙烯连上苯基即命名为 <strong><code>phenylethene</code></strong>（苯乙烯）。同时牢记三条格式红线：<strong>数字间用逗号 <code>,</code>，数字与字母间加连字符 <code>-</code>，前缀与母体间绝不留空格</strong>！", "start": 220.582, "end": 262.75}, {"speaker": "teacher", "role": "example", "stepTag": "📐 卤代烷铁律 ① · 最低位次优先", "boardId": "b1_3", "displayHtml": "进入<strong>第 3 张板书</strong>攻克 <code>29.4</code> 卤代烷（<strong>haloalkanes</strong>）：卤素一律作前缀 <code>fluoro-</code>、<code>chloro-</code>、<code>bromo-</code>、<code>iodo-</code>。看例 1 <code>CH₂Br—CHCl₂</code>：<strong>第一步先比最低位次组合</strong>——从右端数 <code>(1,1,2)</code> 优于左端 <code>(1,2,2)</code>，故两个氯在 C-1、溴在 C-2；<strong>第二步按基团首字母排写法（忽略 <code>di-</code>、<code>tri-</code>！）</strong>——<code>bromo (b)</code> 先于 <code>chloro (c)</code>，定名为 <strong><code>2-bromo-1,1-dichloroethane</code></strong>！", "start": 263.37, "end": 317.25}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 卤代烷铁律 ② · 平手局按字母决胜", "boardId": "b1_3", "displayHtml": "什么时候字母顺序也能管编号？看板书下半部分的<strong>平手决胜陷阱</strong>：在 <code>CH₃CH(Br)CH(Cl)CH₃</code> 中，从左数与从右数位次集合都是 <code>(2,3)</code>！<strong>只有两端位次完全平手时，才按字母序赋小号</strong>：<code>bromo (b)</code> 先于 <code>chloro (c)</code>，故给溴更小的 2 号位，定名为 <strong><code>2-bromo-3-chlorobutane</code></strong>（写反零分！）。下一讲，我们聚焦核心枢纽——醇的命名与 <code>1° / 2° / 3°</code> 分级！", "start": 317.59, "end": 366.934}], "quickChecks": [{"q": "化合物 CH₂=CH—CH=CH₂ 的正确系统 IUPAC 名称（systematic IUPAC name）是什么？", "options": ["A. but-1,3-diene", "B. buta-1,3-diene", "C. but-1,3-ene", "D. butadiene-1,3"], "ans": 1, "exp": "二烯烃后缀 -diene 以辅音字母 d 开头，词干末尾必须保留元音字母 a，写为 buta-1,3-diene；漏掉 a 写成 but-1,3-diene 在 HKDSE 中会直接扣分。"}, {"q": "给卤代烷 CH₃CH(Br)CH(Cl)CH₃ 进行系统命名，下列哪个名称完全正确？", "options": ["A. 3-bromo-2-chlorobutane", "B. 2-chloro-3-bromobutane", "C. 2-bromo-3-chlorobutane", "D. 1-methyl-1-bromo-2-chloropropane"], "ans": 2, "exp": "最长碳链为 4 碳（butane）；从两端编号取代基位次均为 (2,3) 平手，此时按英文字母顺序 bromo (b) 先于 chloro (c) 赋更小位次 2，且前缀按字母序排列，得 2-bromo-3-chlorobutane。"}], "duration": 367.44, "audioFile": "audio/01_29.1-29.4_官能团优先序与烃及卤代烷命名.mp3", "fullStart": 0.0, "fullEnd": 367.38}, {"id": "ep2", "epNum": "第 2 讲", "code": "29.5", "fileSlug": "02_29.5_醇的命名规则与伯仲叔醇精准分级", "titleZh": "醇（Alkanols）的命名法则、多元醇拼写与 1° / 2° / 3° 精准分级", "titleEn": "Naming Alcohols (Alkanols), Polyhydric Alcohols & 1° / 2° / 3° Classification", "goal": "掌握单醇、多元醇（保留元音 e，如 ethane-1,2-diol）及不饱和醇（—OH 优先于 C=C）的拼写与编号细节，练就一秒判定伯醇 primary (1°)、仲醇 secondary (2°)、叔醇 tertiary (3°) 的火眼金睛。", "keyTerms": [{"en": "alcohol / alkanol", "zh": "醇 / 烷醇 (R—OH)"}, {"en": "hydroxyl group (—OH)", "zh": "羟基"}, {"en": "ethane-1,2-diol", "zh": "乙-1,2-二醇（留 e）"}, {"en": "primary (1°) alcohol", "zh": "伯醇 / 一级醇"}, {"en": "secondary (2°) alcohol", "zh": "仲醇 / 二级醇"}, {"en": "tertiary (3°) alcohol", "zh": "叔醇 / 三级醇"}], "boards": [{"id": "b2_1", "tag": "板书 1 · 单醇与多元醇 (29.5A)", "title": "烷醇（Alkanols）与多元醇（Diols / Triols）：字母 'e' 何时去、何时留？", "html": "\n                <div class=\"board-grid-2\">\n                  <div class=\"b-box b-blue\">\n                    <div class=\"b-box-title\">① 单羟基醇（去 <code>-e</code> 换 <code>-ol</code>，C ≥ 3 必标位次！）</div>\n                    <div class=\"b-eq\">CH<sub>3</sub>OH : <strong>methanol</strong> &nbsp;|&nbsp; CH<sub>3</sub>CH<sub>2</sub>OH : <strong>ethanol</strong></div>\n                    <div class=\"b-eq\">CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH : <strong>propan-1-ol</strong> &nbsp;（写 <em>propanol</em> 扣分！）</div>\n                    <div class=\"b-eq\">CH<sub>3</sub>CH(OH)CH<sub>3</sub> : <strong>propan-2-ol</strong></div>\n                    <p class=\"b-tip-text\">后缀 <code>-ol</code> 以元音字母 <code>o</code> 开头，故把烷烃末尾的 <code>e</code> 省去。</p>\n                  </div>\n                  <div class=\"b-box b-amber\">\n                    <div class=\"b-box-title\">② 多元醇 Polyhydric Alcohols（<strong>保留字母 <code>e</code></strong>！）</div>\n                    <div class=\"b-eq\">HOCH<sub>2</sub>CH<sub>2</sub>OH &nbsp;⟶&nbsp; <strong>ethan<u>e</u>-1,2-diol</strong>（防冻剂成分）</div>\n                    <div class=\"b-eq\">HOCH<sub>2</sub>CH(OH)CH<sub>2</sub>OH &nbsp;⟶&nbsp; <strong>propan<u>e</u>-1,2,3-triol</strong>（甘油）</div>\n                    <p class=\"b-tip-text\">⚠️ 后缀 <code>-diol</code>、<code>-triol</code> 以辅音 <code>d</code>、<code>t</code> 开头，烷烃词尾的 <strong><code>e</code> 必须完整保留</strong>！漏写 <code>e</code> 必扣分！</p>\n                  </div>\n                </div>\n                ", "start": 0.25, "end": 98.63}, {"id": "b2_2", "tag": "板书 2 · 多基团醇实战 (29.5B)", "title": "当羟基（—OH）遇上双键（C=C）与卤素（—X）：优先序碾压实战", "html": "\n                <div class=\"b-scheme\">\n<pre>优先序铁律： —OH (alcohol, -ol)  ＞  C=C (alkene, -en-)  ＞  —X / —R (卤素/烷基前缀)\n\n【实战例 1】  Cl—C⁴H₂ — C³H ＝ C²H — C¹H₂—OH\n  · 找户主：—OH 职级最高 ➔ 词尾用 -ol，且必须从最右端 —CH₂OH 开始编 1 号碳！\n  · 标双键与取代基：双键在 C2-C3 之间（but-2-en），氯在 C4（4-chloro-）\n  · 查元音去留：-ol 以元音 o 开头，故 ene 去掉末尾 e 变为 en！\n  ══▶ 标准名称：4-chlorobut-2-en-1-ol （切勿写成 4-chlorobut-2-ene-1-ol 或从左端编号！）\n\n【实战例 2】  C⁵H₃ — C⁴H ＝ C³H — C²H(OH) — C¹H₃   ══▶  pent-3-en-2-ol （右端数使 —OH 拿 2 号位）\n【环醇与芳醇】 环己醇：cyclohexanol   |   C₆H₅CH₂OH：phenylmethanol（苯甲醇）</pre>\n                </div>\n                ", "start": 99.25, "end": 184.238}, {"id": "b2_3", "tag": "板书 3 · 1°/2°/3° 分级与双陷阱 (29.5C)", "title": "伯醇（1°）、仲醇（2°）、叔醇（3°）秒判图解 —— 铺垫 Unit 31 氧化生死线！", "html": "\n<svg class=\"board-svg\" viewBox=\"0 0 780 235\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"1°, 2°, 3° 醇结构分类对比图\">\n  <defs>\n    <linearGradient id=\"bgGrad2\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0%\" stop-color=\"#f8fafc\"/>\n      <stop offset=\"100%\" stop-color=\"#eff6ff\"/>\n    </linearGradient>\n  </defs>\n  <rect x=\"0\" y=\"0\" width=\"780\" height=\"235\" rx=\"12\" fill=\"url(#bgGrad2)\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"390\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#1e3a8a\">只盯住直接连 —OH 的那颗碳（红色高亮 C*），数它直接抓着几个碳原子！</text>\n\n  <!-- Card 1: Primary 1° -->\n  <rect x=\"16\" y=\"40\" width=\"240\" height=\"180\" rx=\"10\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <rect x=\"16\" y=\"40\" width=\"240\" height=\"30\" rx=\"10\" fill=\"#dbeafe\"/>\n  <text x=\"136\" y=\"60\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#1d4ed8\">① Primary (1°) 伯醇 / 一级醇</text>\n  <text x=\"136\" y=\"92\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" fill=\"#475569\">CH₃</text>\n  <text x=\"136\" y=\"108\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" fill=\"#475569\">│</text>\n  <text x=\"72\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">CH₃—CH—</text>\n  <rect x=\"115\" y=\"111\" width=\"52\" height=\"22\" rx=\"5\" fill=\"#fee2e2\" stroke=\"#ef4444\"/>\n  <text x=\"141\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">C*H₂</text>\n  <text x=\"195\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">—OH</text>\n  <text x=\"136\" y=\"156\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">2-methylpropan-1-ol</text>\n  <text x=\"136\" y=\"176\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#dc2626\" font-weight=\"700\">★ 高频陷阱：虽有支链，但 C* 只连</text>\n  <text x=\"136\" y=\"193\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#dc2626\" font-weight=\"700\">1 个碳（含 —CH₂OH），必属 1° 醇！</text>\n\n  <!-- Card 2: Secondary 2° -->\n  <rect x=\"270\" y=\"40\" width=\"240\" height=\"180\" rx=\"10\" fill=\"#ffffff\" stroke=\"#5eead4\" stroke-width=\"1.5\"/>\n  <rect x=\"270\" y=\"40\" width=\"240\" height=\"30\" rx=\"10\" fill=\"#ccfbf1\"/>\n  <text x=\"390\" y=\"60\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#0f766e\">② Secondary (2°) 仲醇 / 二级醇</text>\n  <text x=\"392\" y=\"92\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" fill=\"#475569\">H</text>\n  <text x=\"392\" y=\"108\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" fill=\"#475569\">│</text>\n  <text x=\"330\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">CH₃CH₂—</text>\n  <rect x=\"372\" y=\"111\" width=\"40\" height=\"22\" rx=\"5\" fill=\"#fee2e2\" stroke=\"#ef4444\"/>\n  <text x=\"392\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">C*</text>\n  <text x=\"438\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">—OH</text>\n  <text x=\"392\" y=\"143\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" fill=\"#475569\">│</text>\n  <text x=\"392\" y=\"158\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" font-weight=\"700\" fill=\"#334155\">CH₃</text>\n  <text x=\"390\" y=\"180\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">butan-2-ol</text>\n  <text x=\"390\" y=\"198\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#0f766e\" font-weight=\"700\">C* 直接连 2 个碳 + 1 个 H ➔ 2° 醇</text>\n\n  <!-- Card 3: Tertiary 3° -->\n  <rect x=\"524\" y=\"40\" width=\"240\" height=\"180\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fda4af\" stroke-width=\"1.5\"/>\n  <rect x=\"524\" y=\"40\" width=\"240\" height=\"30\" rx=\"10\" fill=\"#ffe4e6\"/>\n  <text x=\"644\" y=\"60\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#be123c\">③ Tertiary (3°) 叔醇 / 三级醇</text>\n  <text x=\"644\" y=\"92\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" font-weight=\"700\" fill=\"#334155\">CH₃</text>\n  <text x=\"644\" y=\"108\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" fill=\"#475569\">│</text>\n  <text x=\"595\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">CH₃—</text>\n  <rect x=\"624\" y=\"111\" width=\"40\" height=\"22\" rx=\"5\" fill=\"#fee2e2\" stroke=\"#ef4444\"/>\n  <text x=\"644\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">C*</text>\n  <text x=\"690\" y=\"126\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">—OH</text>\n  <text x=\"644\" y=\"143\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" fill=\"#475569\">│</text>\n  <text x=\"644\" y=\"158\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"12.5\" font-weight=\"700\" fill=\"#334155\">CH₃</text>\n  <text x=\"644\" y=\"178\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">2-methylpropan-2-ol</text>\n  <text x=\"644\" y=\"196\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#be123c\" font-weight=\"700\">C* 连 3 个碳（0 个 H！）+ 主链仅 3 碳</text>\n</svg>\n\n                <div class=\"b-note\" style=\"margin-top:8px;\">💡 <strong>黄金口诀</strong>：<strong>只看连 <code>—OH</code> 的那颗红碳 <code>C*</code></strong>！连 0 或 1 个碳 = <code>primary (1°)</code>；连 2 个碳 = <code>secondary (2°)</code>；连 3 个碳（无直接 H）= <code>tertiary (3°)</code>！</div>\n                ", "start": 184.858, "end": 341.898}], "turns": [{"speaker": "teacher", "role": "concept", "stepTag": "🎯 醇族登场 · 三碳起必标位次", "boardId": "b2_1", "displayHtml": "欢迎来到第 2 讲！本讲聚焦 <code>29.5</code> 节主角——<strong>醇（alcohols / alkanols）</strong>，特征官能团为<strong>羟基（hydroxyl group, <code>—OH</code>）</strong>。看<strong>第 1 张板书</strong>左框：单醇将烷烃末尾的 <code>-e</code> 换成 <code>-ol</code>，一碳 <code>methanol</code>、二碳 <code>ethanol</code> 无需标号；但<strong>碳数 ≥ 3 时必须标明位次</strong>（<code>propan-1-ol</code> vs <code>propan-2-ol</code>），只写 <em>propanol</em> 直接丢分！", "start": 0.25, "end": 48.946}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 拼写红线 · 多元醇保留元音 e", "boardId": "b2_1", "displayHtml": "再看第 1 张板书右框——<strong>多元醇（polyhydric alcohols）保留元音 <code>e</code> 铁律</strong>！含两个或三个 <code>—OH</code> 时后缀用 <code>-diol</code>、<code>-triol</code>，因 <code>d</code>、<code>t</code> 为辅音字母，烷烃词干末尾的<strong>字母 <code>e</code> 必须完整保留</strong>！必背两大实例：防冻剂 <strong><code>ethane-1,2-diol</code></strong> 与甘油 <strong><code>propane-1,2,3-triol</code></strong>，漏写 <code>e</code> 必扣分！", "start": 49.286, "end": 98.63}, {"speaker": "teacher", "role": "example", "stepTag": "🔍 多基团实战 · 不饱和卤代醇编号", "boardId": "b2_2", "displayHtml": "切到<strong>第 2 张板书</strong>演练多基团优先序！看例 1 <code>ClCH₂CH=CHCH₂OH</code>：优先序 <code>—OH &gt; C=C &gt; —Cl</code>，故 <code>—OH</code> 当户主定词尾 <code>-ol</code>，必须<strong>从最右端编为 C-1</strong>！双键在 C-2、氯在 C-4；因 <code>-ol</code> 以元音 <code>o</code> 开头，<code>ene</code> 省去末尾 <code>e</code> 写为 <code>en</code>，完整定名为 <strong><code>4-chlorobut-2-en-1-ol</code></strong>！", "start": 99.25, "end": 145.018}, {"speaker": "teacher", "role": "example", "stepTag": "🧩 拓展巩固 · 不饱和仲醇与苯甲醇", "boardId": "b2_2", "displayHtml": "再看板书下方巩固：例 2 <code>CH₃CH=CHCH(OH)CH₃</code> 从右端编号让 <code>—OH</code> 拿更小的 2 号位，定名为 <strong><code>pent-3-en-2-ol</code></strong>。环状六碳醇为 <code>cyclohexanol</code>（环己醇）；而 <code>C₆H₅CH₂OH</code> 以甲醇为母体、苯基作前缀，命名为 <strong><code>phenylmethanol</code></strong>（苯甲醇）。", "start": 145.358, "end": 184.238}, {"speaker": "teacher", "role": "concept", "stepTag": "📐 核心技能 · 1° / 2° / 3° 醇分类金标准", "boardId": "b2_3", "displayHtml": "聚焦<strong>第 3 张板书</strong>！醇分为三类：<strong>伯醇 <code>primary (1°) alcohol</code></strong>、<strong>仲醇 <code>secondary (2°) alcohol</code></strong> 与 <strong>叔醇 <code>tertiary (3°) alcohol</code></strong>——这是 Unit 31 氧化反应的生死线！一秒判准金标准：<strong>只盯住直接连 <code>—OH</code> 的红色碳原子 <code>C*</code>，数它直接抓着几个碳原子</strong>！连 <code>0</code> 或 <code>1</code> 个碳（含 <code>—CH₂OH</code> 或甲醇）= <strong><code>1°</code></strong>；连 <code>2</code> 个碳（<code>—CH(OH)—</code>）= <strong><code>2°</code></strong>；连 <code>3</code> 个碳（<code>C*</code> 上 0 个 H！）= <strong><code>3°</code></strong>！", "start": 184.858, "end": 248.002}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 头号陷阱 ① · 假叔醇真伯醇", "boardId": "b2_3", "displayHtml": "警惕左图第一张卡片的<strong>考场头号假象</strong>：<code>(CH₃)₂CH—CH₂OH</code>（<strong><code>2-methylpropan-1-ol</code></strong>）！切勿看见带支链就猜叔醇或仲醇——支链远在 C-2，直接连 <code>—OH</code> 的红碳依然是 <strong><code>—CH₂OH</code>（仅直接连 1 个碳）</strong>，故它 100% 属于正宗的 <strong><code>primary (1°) alcohol</code>（伯醇）</strong>！", "start": 248.342, "end": 289.766}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 头号陷阱 ② · 十字叔醇最长主链", "boardId": "b2_3", "displayHtml": "再看右图第三张卡片 <code>(CH₃)₃COH</code> 的<strong>主链计数陷阱</strong>：虽共 4 个碳，但画成十字结构后，<strong>含 <code>C—OH</code> 的最长连续碳链仅 3 个碳（<code>propan-2-ol</code>）</strong>，第 4 个碳是 C-2 上的甲基支链！正确名称是 <strong><code>2-methylpropan-2-ol</code></strong>（绝非 <em>butanol</em>！），属典型 <strong><code>tertiary (3°) alcohol</code>（叔醇）</strong>。下一讲迎战醛、酮、羧酸与“反写酯”一刀切大法！", "start": 290.106, "end": 341.898}], "quickChecks": [{"q": "化合物 (CH₃)₂CHCH₂OH 的系统名称及所属醇的级别（class of alcohol）分别是什么？", "options": ["A. butan-1-ol；伯醇 primary (1°) alcohol", "B. 2-methylpropan-1-ol；叔醇 tertiary (3°) alcohol", "C. 2-methylpropan-1-ol；伯醇 primary (1°) alcohol", "D. 2-methylpropan-2-ol；仲醇 secondary (2°) alcohol"], "ans": 2, "exp": "含 —OH 的最长碳链为 3 碳（propan-1-ol），C-2 连有甲基，故为 2-methylpropan-1-ol；直接连 —OH 的碳是末端的 —CH₂OH，仅直接连接 1 个碳原子，故属伯醇 primary (1°) alcohol。"}, {"q": "下列哪个化合物的系统 IUPAC 拼写完全符合 HKDSE 评分标准？", "options": ["A. ethan-1,2-diol", "B. 4-chlorobut-2-ene-1-ol", "C. 1-chlorobut-2-en-4-ol", "D. 4-chlorobut-2-en-1-ol"], "ans": 3, "exp": "A 漏了元音 e（应为 ethane-1,2-diol）；B 多了 e（-ol 以元音 o 开头，ene 应去 e 写为 en）；C 编号方向反了（—OH 优先于 —Cl，应从 —OH 端编 C-1）；只有 D（4-chlorobut-2-en-1-ol）完全正确！"}], "duration": 342.41, "audioFile": "audio/02_29.5_醇的命名规则与伯仲叔醇精准分级.mp3", "fullStart": 368.88, "fullEnd": 711.23}, {"id": "ep3", "epNum": "第 3 讲", "code": "29.6 – 29.8", "fileSlug": "03_29.6-29.8_醛酮羧酸与反写酯拆键命名法", "titleZh": "羰基家族命名精讲：醛、酮、羧酸与“反写酯”一刀切大法", "titleEn": "Naming Carbonyl Series: Aldehydes, Ketones, Carboxylic Acids & Esters", "goal": "分清末端醛基（—CHO, -al）与内部酮羰基（>C=O, -one，牢记 propanone 与 butanone 不标位次！），掌握羧酸及二元酸命名，彻底攻克正反写酯（esters）的 C—O 单键一刀切拆键法。", "keyTerms": [{"en": "carbonyl group (>C=O)", "zh": "羰基"}, {"en": "aldehyde / alkanal (-al)", "zh": "醛 / 烷醛 (—CHO)"}, {"en": "ketone / alkanone (-one)", "zh": "酮 / 烷酮"}, {"en": "carboxylic acid (-oic acid)", "zh": "羧酸 (—COOH)"}, {"en": "ester (alkyl alkanoate)", "zh": "酯（两词独立命名）"}], "boards": [{"id": "b3_1", "tag": "板书 1 · 醛与酮对比 (29.6)", "title": "同含羰基（>C=O）的两兄弟：末端醛（Aldehyde） vs 内部酮（Ketone）", "html": "\n                <div class=\"board-grid-2\">\n                  <div class=\"b-box b-blue\">\n                    <div class=\"b-box-title\">① 醛 Aldehydes / Alkanals（<code>R—CHO</code>，去 <code>e</code> 加 <code>-al</code>）</div>\n                    <div class=\"b-eq\">HCHO : <strong>methanal</strong> &nbsp;|&nbsp; CH<sub>3</sub>CHO : <strong>ethanal</strong></div>\n                    <div class=\"b-eq\">(CH<sub>3</sub>)<sub>2</sub>CHCH<sub>2</sub>CHO &nbsp;⟶&nbsp; <strong>3-methylbutan<u>al</u></strong></div>\n                    <ul class=\"b-points\">\n                      <li>醛基必在碳链<strong>最末端（固定为 C-1）</strong>，<strong>严禁</strong>画蛇添足写 <em>-1-al</em>！</li>\n                      <li>⚠️ 简式必须写 <strong><code>—CHO</code></strong>，绝不可写成 <em>—COH</em>；拼写看清 <code>-al</code>（醛）与 <code>-ol</code>（醇）！</li>\n                    </ul>\n                  </div>\n                  <div class=\"b-box b-teal\">\n                    <div class=\"b-box-title\">② 酮 Ketones / Alkanones（<code>R—CO—R'</code>，去 <code>e</code> 加 <code>-one</code>）</div>\n                    <div class=\"b-eq\">CH<sub>3</sub>COCH<sub>3</sub> : <strong>propanone</strong> &nbsp;|&nbsp; CH<sub>3</sub>COCH<sub>2</sub>CH<sub>3</sub> : <strong>butanone</strong></div>\n                    <div class=\"b-eq\">C<sub>5</sub> 起必标号：<strong>pentan-2-one</strong> vs <strong>pentan-3-one</strong></div>\n                    <ul class=\"b-points\">\n                      <li>⚠️ <strong>DSE 扣分重灾区</strong>：三碳酮与四碳酮内部羰基只有唯一位置，<strong>严禁写 <em>butan-2-one</em></strong>，只能写 <strong><code>butanone</code></strong>！</li>\n                    </ul>\n                  </div>\n                </div>\n                ", "start": 0.25, "end": 119.226}, {"id": "b3_2", "tag": "板书 2 · 羧酸与二元酸 (29.7)", "title": "命名霸主羧酸（Carboxylic Acids）与二元羧酸（Dioic Acids）总碳数铁律", "html": "\n                <div class=\"b-box b-amber\">\n                  <div class=\"b-box-title\">羧基 Carboxyl Group（<code>—COOH</code>）：优先级第 1，永远坐镇 C-1，词尾 <code>-oic acid</code>（两词中间留空格！）</div>\n                  <div class=\"b-eq\">HCOOH : <strong>methanoic acid</strong> &nbsp;|&nbsp; CH<sub>3</sub>COOH : <strong>ethanoic acid</strong> &nbsp;|&nbsp; C<sub>6</sub>H<sub>5</sub>COOH : <strong>benzoic acid</strong></div>\n                  <div class=\"b-eq\">CH<sub>2</sub>=CH—COOH &nbsp;⟶&nbsp; <strong>propenoic acid</strong>（双键与羧基同框，羧基稳拿 C-1）</div>\n                  <div class=\"b-eq\">HOOC—COOH : <strong>ethan<u>e</u>dioic acid</strong>（共 2 碳） &nbsp;|&nbsp; HOOC—(CH<sub>2</sub>)<sub>4</sub>—COOH : <strong>hexan<u>e</u>dioic acid</strong>（共 6 碳！）</div>\n                  <ul class=\"b-points\">\n                    <li><strong>二元酸双细节</strong>：① <code>-dioic acid</code> 以辅音 <code>d</code> 开头，保留元音 <strong><code>e</code></strong>；② 两端两个 <code>—COOH</code> 的碳必须<strong>全部计入主链总碳数</strong>（<code>4 + 2 = 6</code> 碳）！</li>\n                  </ul>\n                </div>\n                ", "start": 119.846, "end": 174.374}, {"id": "b3_3", "tag": "板书 3 · 酯拆键秒杀法 (29.8)", "title": "酯（Esters, RCOOR'）正写与反写一刀切大法（两词命名：alkyl alkanoate）", "html": "\n<svg class=\"board-svg\" viewBox=\"0 0 780 230\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"酯的正写与反写 C—O 单键一刀切示意图\">\n  <rect x=\"0\" y=\"0\" width=\"780\" height=\"230\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/>\n  <text x=\"390\" y=\"26\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#92400e\">✂️ 酯（Ester）正反写通杀秘诀：先找准 C—O 单键一刀剪断！单键氧侧变 alkyl，带 C=O 侧变 alkanoate</text>\n\n  <!-- Left: Normal written ester -->\n  <rect x=\"18\" y=\"42\" width=\"362\" height=\"172\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <rect x=\"18\" y=\"42\" width=\"362\" height=\"28\" rx=\"10\" fill=\"#eff6ff\"/>\n  <text x=\"199\" y=\"61\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1d4ed8\">【正写结构】CH₃CH₂COOCH₃</text>\n\n  <!-- Acid part box -->\n  <rect x=\"34\" y=\"84\" width=\"194\" height=\"54\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#fca5a5\"/>\n  <text x=\"131\" y=\"108\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">CH₃—CH₂—C(=O)</text>\n  <text x=\"131\" y=\"128\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">含 C=O 共 3 碳（来自丙酸）</text>\n\n  <!-- Cut line -->\n  <line x1=\"238\" y1=\"76\" x2=\"238\" y2=\"148\" stroke=\"#d97706\" stroke-width=\"2.5\" stroke-dasharray=\"5,4\"/>\n  <text x=\"238\" y=\"164\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#b45309\">✂️ 剪 C—O</text>\n\n  <!-- Alcohol part box -->\n  <rect x=\"248\" y=\"84\" width=\"118\" height=\"54\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\"/>\n  <text x=\"307\" y=\"108\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\">—O—CH₃</text>\n  <text x=\"307\" y=\"128\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#059669\">纯连 O 仅 1 碳（醇）</text>\n\n  <text x=\"199\" y=\"196\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" fill=\"#0f172a\">══▶ <tspan fill=\"#059669\">methyl</tspan> <tspan fill=\"#b91c1c\">propanoate</tspan></text>\n\n  <!-- Right: Reverse written ester trap -->\n  <rect x=\"400\" y=\"42\" width=\"362\" height=\"172\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fda4af\" stroke-width=\"1.8\"/>\n  <rect x=\"400\" y=\"42\" width=\"362\" height=\"28\" rx=\"10\" fill=\"#ffe4e6\"/>\n  <text x=\"581\" y=\"61\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" fill=\"#be123c\">⚠️【反写陷阱！】CH₃OOCCH₂CH₃（注意是 —OOC—）</text>\n\n  <!-- Alcohol part box (on left now!) -->\n  <rect x=\"416\" y=\"84\" width=\"118\" height=\"54\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\"/>\n  <text x=\"475\" y=\"108\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\">CH₃—O—</text>\n  <text x=\"475\" y=\"128\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#059669\">纯连 O 仅 1 碳（醇）</text>\n\n  <!-- Cut line -->\n  <line x1=\"544\" y1=\"76\" x2=\"544\" y2=\"148\" stroke=\"#d97706\" stroke-width=\"2.5\" stroke-dasharray=\"5,4\"/>\n  <text x=\"544\" y=\"164\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#b45309\">✂️ 剪 O—C</text>\n\n  <!-- Acid part box (on right now!) -->\n  <rect x=\"554\" y=\"84\" width=\"194\" height=\"54\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#fca5a5\"/>\n  <text x=\"651\" y=\"108\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">C(=O)—CH₂—CH₃</text>\n  <text x=\"651\" y=\"128\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">含 C=O 共 3 碳（来自丙酸）</text>\n\n  <text x=\"581\" y=\"196\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"800\" fill=\"#0f172a\">══▶ 依然是 <tspan fill=\"#059669\">methyl</tspan> <tspan fill=\"#b91c1c\">propanoate</tspan>！</text>\n</svg>\n\n                <div class=\"b-note\" style=\"margin-top:8px;\">📌 <strong>再防两处暗礁</strong>：① 甲酸酯 <code>HCOOCH₂CH₃</code> 的酸部只有 1 个碳，叫 <strong><code>ethyl methanoate</code></strong>；② 反写支链酯 <code>CH₃CH₂OOCCH(CH₃)₂</code> 展开后醇部是 <code>ethyl</code>，酸部主链 3 碳带甲基，叫 <strong><code>ethyl 2-methylpropanoate</code></strong>！</div>\n                ", "start": 174.994, "end": 324.834}], "turns": [{"speaker": "teacher", "role": "concept", "stepTag": "🎯 羰基双生子 · 醛基永远在 1 号端", "boardId": "b3_1", "displayHtml": "欢迎来到第 3 讲！本讲攻克含<strong>羰基（carbonyl group, <code>&gt;C=O</code>）</strong>的四大含氧同系物。先看<strong>第 1 张板书</strong>左框的<strong>醛（aldehydes / alkanals）</strong>：醛基必在碳链最末端（天然 <code>C-1</code>），去 <code>-e</code> 换 <code>-al</code>，且<strong>绝不标数字 1</strong>（如 <code>methanal</code>、<code>ethanal</code>、<code>benzaldehyde</code>）！", "start": 0.25, "end": 40.57}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 醛类双红线 · 严防 COH 与拼写混淆", "boardId": "b3_1", "displayHtml": "看支链醛 <code>(CH₃)₂CHCH₂CHO</code>：从右端醛基编 C-1，主链 4 碳、C-3 挂甲基，定名为 <strong><code>3-methylbutanal</code></strong>。谨记两条高压红线：① 醛基简式永远写 <strong><code>—CHO</code></strong>（严禁写成 <em>—COH</em>！）；② 手写拼写时严格区分醛 <code>-al</code> 与醇 <code>-ol</code>！", "start": 40.91, "end": 72.638}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 酮位次分界 · 丁酮严禁标数字 2", "boardId": "b3_1", "displayHtml": "再看右框的<strong>酮（ketones / alkanones）</strong>：羰基夹在碳链内部，去 <code>-e</code> 换 <code>-one</code>。请立刻圈出 <strong>DSE 经典扣分坑</strong>：三碳酮 <strong><code>propanone</code></strong> 与四碳酮 <strong><code>butanone</code></strong> 内部羰基只有唯一摆法，<strong>严禁写成 <em>butan-2-one</em></strong>！只有当<strong>碳数 ≥ 5</strong> 出现位置异构时，才必须标明位次：如 <strong><code>pentan-2-one</code></strong> 与 <strong><code>pentan-3-one</code></strong>。", "start": 72.978, "end": 119.226}, {"speaker": "teacher", "role": "concept", "stepTag": "📐 羧酸霸主 · 空格格式与二元酸总碳数", "boardId": "b3_2", "displayHtml": "移步<strong>第 2 张板书</strong>：优先序总冠军<strong>羧酸（carboxylic acids / alkanoic acids）</strong>，含<strong>羧基（<code>—COOH</code>）</strong>，固定为 <code>C-1</code>，词尾改写为 <strong><code>-oic acid</code>（注意两词间有空格！）</strong>。遇到两端各带一个羧基的<strong>二元羧酸（dioic acids）</strong>盯紧两点：① 保留元音 <strong><code>e</code></strong>（如 <code>ethanedioic acid</code>）；② <strong>两端羧基碳必须计入主链总碳数</strong>——如 <code>HOOC—(CH₂)₄—COOH</code> 共 <code>4 + 2 = 6</code> 碳，定名为 <strong><code>hexanedioic acid</code></strong>！", "start": 119.846, "end": 174.374}, {"speaker": "teacher", "role": "example", "stepTag": "✂️ 酯命名神技 · C—O 单键一刀切", "boardId": "b3_3", "displayHtml": "重头戏看<strong>第 3 张板书</strong>，驯服 Unit 29 头号硬骨头——<strong>酯（esters）</strong>！酯由羧酸与醇缩合而成，名称由<strong>两个独立单词</strong>组成：<strong><code>alkyl alkanoate</code></strong>。祭出通杀绝招——<strong>“找准 <code>C—O</code> 单键一刀切”</strong>！看左图正写结构 <code>CH₃CH₂COOCH₃</code>：沿碳氧单键剪开，<strong>纯连单键氧 <code>—O—</code> 的半截</strong>来自醇，放第一词叫 <code>methyl</code>；<strong>带 <code>C=O</code> 双键的半截（含羰基碳共 3 碳！）</strong>来自丙酸，放第二词叫 <code>propanoate</code>，合称 <strong><code>methyl propanoate</code></strong>！", "start": 174.994, "end": 230.698}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 反写酯排雷 · 展开 OOC 绝不写反", "boardId": "b3_3", "displayHtml": "马上剪右图粉框的<strong>反写陷阱 <code>CH₃OOCCH₂CH₃</code></strong>！凡见 <code>—OOC—</code> 必先展开为 <code>CH₃—O—C(=O)—CH₂CH₃</code>：沿单键剪断，左边纯连氧的仍是 1 碳 <code>methyl</code>（第一词），右边带 <code>C=O</code> 的仍是 3 碳 <code>propanoate</code>（第二词）——名称依然是 <strong><code>methyl propanoate</code></strong>！", "start": 231.038, "end": 276.878}, {"speaker": "teacher", "role": "trap", "stepTag": "🔍 酯类双暗礁 · 甲酸酯与支链反写酯", "boardId": "b3_3", "displayHtml": "再扫清底部两处暗礁：① 甲酸酯 <code>HCOOCH₂CH₃</code> 别漏数羰基那 1 颗碳，叫 <strong><code>ethyl methanoate</code></strong>；② 反写支链酯 <code>CH₃CH₂OOCCH(CH₃)₂</code> 剪开后醇部为 <code>ethyl</code>，酸部主链 3 碳带甲基，叫 <strong><code>ethyl 2-methylpropanoate</code></strong>！练熟这招拆键法，到了 Unit 31 写酯的水解产物同样一秒拆回醇与酸！下一讲我们补齐含氮家族！", "start": 277.218, "end": 324.834}], "quickChecks": [{"q": "小心反写陷阱！化合物 CH₃CH₂OOCCH₃ 的正确系统 IUPAC 名称是什么？", "options": ["A. methyl propanoate", "B. ethyl ethanoate", "C. propyl methanoate", "D. methyl butanoate"], "ans": 1, "exp": "将 —OOC— 展开为 CH₃CH₂—O—C(=O)—CH₃ 并沿 C—O 单键剪断：纯连单键氧的醇部是 2 碳乙基 ethyl；带 C=O 双键的酸部共 2 碳，为乙酸根 ethanoate，合起来是 ethyl ethanoate（乙酸乙酯）。"}, {"q": "下列哪组“结构简式 — 系统名称”配对在 HKDSE 评分中会被判为错误（INCORRECT）？", "options": ["A. (CH₃)₂CHCHO — methylpropanal", "B. CH₃COCH₂CH₃ — butan-2-one", "C. HOOC—COOH — ethanedioic acid", "D. HCOOCH₃ — methyl methanoate"], "ans": 1, "exp": "B 错误！四碳酮 CH₃COCH₂CH₃ 的羰基在链内部只有唯一位置（无位置异构体），标准名称必须写 butanone，加上冗余位次写成 butan-2-one 会被扣分。"}], "duration": 325.34, "audioFile": "audio/03_29.6-29.8_醛酮羧酸与反写酯拆键命名法.mp3", "fullStart": 712.73, "fullEnd": 1038.02}, {"id": "ep4", "epNum": "第 4 讲", "code": "29.9 – 29.10", "fileSlug": "04_29.9-29.10_酰胺与胺的命名及多官能团实战", "titleZh": "含氮同系物（未取代酰胺、伯胺）与多官能团综合命名实战", "titleEn": "Naming Unsubstituted Amides, Primary Amines & Multifunctional Carbon Compounds", "goal": "一秒区分未取代酰胺（unsubstituted amide, —CONH₂）与伯胺（primary amine, —NH₂），掌握二胺留 e 规则，融会贯通处理含羧基、羟基、氨基的多官能团分子命名及“由名画式”反向拆解。", "keyTerms": [{"en": "unsubstituted amide (-amide)", "zh": "未取代酰胺 (—CONH₂)"}, {"en": "primary amine (-amine)", "zh": "伯胺 / 一级胺 (—NH₂)"}, {"en": "amino- / hydroxy-", "zh": "氨基 / 羟基（降级前缀）"}, {"en": "hexane-1,6-diamine", "zh": "己-1,6-二胺（留 e）"}, {"en": "condensed structural formula", "zh": "结构简式"}], "boards": [{"id": "b4_1", "tag": "板书 1 · 酰胺 vs 伯胺 (29.9–29.10)", "title": "含氮双子星秒判术：看氮原子隔壁有没有紧挨羰基（C=O）！", "html": "\n                <div class=\"board-grid-2\">\n                  <div class=\"b-box b-amber\">\n                    <div class=\"b-box-title\">① 未取代酰胺 Unsubstituted Amides（<code>R—CONH₂</code>）</div>\n                    <div class=\"b-eq\">HCONH<sub>2</sub> : <strong>methanamide</strong> &nbsp;|&nbsp; CH<sub>3</sub>CONH<sub>2</sub> : <strong>ethanamide</strong></div>\n                    <div class=\"b-eq\">CH<sub>3</sub>CH<sub>2</sub>CONH<sub>2</sub> : <strong>propanamide</strong> &nbsp;|&nbsp; C<sub>6</sub>H<sub>5</sub>CONH<sub>2</sub> : <strong>benzamide</strong></div>\n                    <ul class=\"b-points\">\n                      <li>特征：<code>—NH₂</code> <strong>直接连在 <code>C=O</code> 碳上</strong>，该碳固定为 <code>C-1</code>（不标数字 1）。</li>\n                      <li>去 <code>-e</code> 换词尾 <strong><code>-amide</code></strong>（化学性质呈中性）。</li>\n                    </ul>\n                  </div>\n                  <div class=\"b-box b-teal\">\n                    <div class=\"b-box-title\">② 伯胺 Primary Amines（<code>R—NH₂</code>，隔壁无 C=O）</div>\n                    <div class=\"b-eq\">CH<sub>3</sub>CH<sub>2</sub>NH<sub>2</sub> : <strong>ethanamine</strong> &nbsp;|&nbsp; C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> : <strong>phenylamine</strong></div>\n                    <div class=\"b-eq\">C ≥ 3 必标号：<strong>propan-1-amine</strong> vs <strong>propan-2-amine</strong></div>\n                    <div class=\"b-eq\">H<sub>2</sub>N—(CH<sub>2</sub>)<sub>6</sub>—NH<sub>2</sub> &nbsp;⟶&nbsp; <strong>hexan<u>e</u>-1,6-diamine</strong>（二胺留 <code>e</code>！）</div>\n                  </div>\n                </div>\n                ", "start": 0.25, "end": 110.558}, {"id": "b4_2", "tag": "板书 2 · 多官能团综合实战", "title": "多官能团同框“户主 vs 词头”大实战（氨基酸 · 羟基酸 · 氨基醇）", "html": "\n                <div class=\"b-scheme\">\n<pre>核心排序复盘： —COOH (-oic acid) ＞ —CHO (-al) ＞ &gt;C=O (-one) ＞ —OH (-ol / hydroxy-) ＞ —NH₂ (-amine / amino-)\n\n①【氨基酸 Amino acid】   C³H₃ — C²H(NH₂) — C¹OOH\n   · —COOH 夺冠作母体 propanoic acid (C-1)；C-2 上的 —NH₂ 降级作词头 amino-\n   ══▶ 2-aminopropanoic acid （构成蛋白质的天然丙氨酸！）\n\n②【羟基酸 Hydroxy acid】 C⁴H₃ — C³H(OH) — C²H₂ — C¹OOH\n   · —COOH 夺冠作母体 butanoic acid (C-1)；C-3 上的 —OH 降级作词头 hydroxy-（注意没有字母 l！）\n   ══▶ 3-hydroxybutanoic acid\n\n③【氨基醇 Amino alcohol】H₂N — C⁴H₂ — C³H₂ — C²H(OH) — C¹H₃\n   · ⚠️ 易错对决：—OH 优先级高于 —NH₂！故母体是醇 butan-2-ol（从右端编号！），氨基在 C-4 作词头\n   ══▶ 4-aminobutan-2-ol</pre>\n                </div>\n                ", "start": 111.178, "end": 214.958}, {"id": "b4_3", "tag": "板书 3 · 命名闭环与由名画式", "title": "上半场收官：IUPAC 五步检查清单 + “由英文名倒推结构式”防错三步法", "html": "\n                <div class=\"board-grid-2\">\n                  <div class=\"b-box b-blue\">\n                    <div class=\"b-box-title\">✅ 写英文名：五步满分自检 SOP</div>\n                    <ul class=\"b-points\">\n                      <li><strong>1. 定户主</strong>：找最高优先级官能团定词尾。</li>\n                      <li><strong>2. 找主链</strong>：必须包含主官能团的最长连续碳链。</li>\n                      <li><strong>3. 编门牌</strong>：从靠近主官能团的一端数最小号。</li>\n                      <li><strong>4. 排前缀</strong>：按首字母排（忽略 <code>di-/tri-</code>）。</li>\n                      <li><strong>5. 查拼写</strong>：辅音前留元音（<code>buta-</code>、<code>ethane-1,2-diol</code>），核对连字符与空格！</li>\n                    </ul>\n                  </div>\n                  <div class=\"b-box b-rose\">\n                    <div class=\"b-box-title\">✍️ 看英文名画结构式：从后往前拆！</div>\n                    <p class=\"b-tip-text\" style=\"margin-bottom:6px;\">例：画出 <strong><code>ethyl 2-methylpropanoate</code></strong></p>\n                    <ul class=\"b-points\">\n                      <li><strong>Step 1 看最后母体</strong>：<code>propanoate</code> ➔ 画 3 碳链，C-1 画上酯基 <code>—C(=O)—O—</code>。</li>\n                      <li><strong>Step 2 挂支链与醇基</strong>：C-2 挂甲基 <code>—CH₃</code>，单键氧挂乙基 <code>—CH₂CH₃</code>。</li>\n                      <li><strong>Step 3 补氢验四键</strong>：确保<strong>每颗碳严格连满 4 根共价键</strong>（写 5 键碳全题 0 分！），得 <code>(CH₃)₂CHCOOCH₂CH₃</code>。</li>\n                    </ul>\n                  </div>\n                </div>\n                ", "start": 215.578, "end": 309.11}], "turns": [{"speaker": "teacher", "role": "concept", "stepTag": "🎯 含氮双子星 · 未取代酰胺认准 CONH₂", "boardId": "b4_1", "displayHtml": "欢迎来到第 4 讲！命名收官战聚焦两类含氮同系物：<strong>未取代酰胺（<code>unsubstituted amides</code>, <code>-amide</code>）</strong>与<strong>伯胺（<code>primary amines</code>, <code>-amine</code>）</strong>。如何一秒区分只差一个字母的它俩？看<strong>第 1 张板书</strong>左框：<strong>盯住氮原子隔壁有没有紧挨羰基 <code>C=O</code></strong>！若 <code>—NH₂</code> 紧连 <code>C=O</code> 构成 <code>—CONH₂</code>，属中性的<strong>未取代酰胺</strong>，去 <code>-e</code> 换 <code>-amide</code>：如 <code>methanamide</code>、<code>ethanamide</code>、<code>propanamide</code> 与 <code>benzamide</code>。", "start": 0.25, "end": 56.746}, {"speaker": "teacher", "role": "example", "stepTag": "🔍 伯胺与二胺 · 鱼腥味特征与留 e 规则", "boardId": "b4_1", "displayHtml": "再看右框：若氨基（<code>amino group, —NH₂</code>）隔壁无 <code>C=O</code>，则属具弱碱性的<strong>伯胺（primary amine）</strong>（短链胺常具鱼腥味 <code>fishy smell</code>），去 <code>-e</code> 换 <code>-amine</code>；<strong>碳数 ≥ 3 必标位次</strong>（<code>propan-1-amine</code> vs <code>propan-2-amine</code>）。二胺后缀 <code>-diamine</code> 以辅音 <code>d</code> 开头，<strong>保留元音 <code>e</code></strong>：如合成尼龙-6,6 的单体 <strong><code>hexane-1,6-diamine</code></strong>！", "start": 57.086, "end": 110.558}, {"speaker": "teacher", "role": "example", "stepTag": "📐 多官能团实战 ① · 氨基酸与羟基酸", "boardId": "b4_2", "displayHtml": "切到<strong>第 2 张板书</strong>演练多官能团同框——<strong>“老大坐词尾，老二当词头”</strong>！例 ① 氨基酸 <code>CH₃CH(NH₂)COOH</code>：<code>—COOH</code> 夺冠作母体 <code>propanoic acid</code>（C-1），C-2 氨基作前缀 <code>amino-</code>，得 <strong><code>2-aminopropanoic acid</code></strong>。例 ② 羟基酸 <code>CH₃CH(OH)CH₂COOH</code>：母体为 <code>butanoic acid</code>，C-3 羟基作前缀——⚠️ <strong>拼写留神：前缀是 <code>hydroxy-</code>（去掉了 hydroxyl 末尾的 <code>l</code>！）</strong>，定名为 <strong><code>3-hydroxybutanoic acid</code></strong>！", "start": 111.178, "end": 169.738}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 多官能团实战 ② · 羟基压倒氨基陷阱", "boardId": "b4_2", "displayHtml": "盯紧例 ③ 氨基醇 <code>H₂NCH₂CH₂CH(OH)CH₃</code> 的<strong>编号陷阱</strong>：切勿因 <code>—NH₂</code> 在最左端就从左数！优先序中 <strong><code>—OH</code> 高于 <code>—NH₂</code></strong>，故羟基当户主定母体为 <code>butan-2-ol</code>（必须<strong>从右端编 C-1</strong>！），C-4 氨基降为前缀，正确名称是 <strong><code>4-aminobutan-2-ol</code></strong>！", "start": 170.078, "end": 214.958}, {"speaker": "teacher", "role": "summary", "stepTag": "✅ 写名五步自检 · 考场零失误清单", "boardId": "b4_3", "displayHtml": "来到<strong>第 3 张板书</strong>左框，收下交卷前<strong>五步满分自检 SOP</strong>：① 定户主（最高优先级官能团定词尾）➔ ② 找主链（含主官能团的最长连续碳链）➔ ③ 编门牌（近主官能团端赋最小号）➔ ④ 排前缀（按首字母排，忽略 <code>di-/tri-</code>）➔ ⑤ 查拼写（辅音前留元音 <code>a/e</code>，核对连字符、逗号与空格）！", "start": 215.578, "end": 255.802}, {"speaker": "teacher", "role": "summary", "stepTag": "✍️ 由名画式大招 · 严防五键怪物碳", "boardId": "b4_3", "displayHtml": "再看右框<strong>“由英文名画结构式”秘诀——从后往前拆</strong>：如画 <code>ethyl 2-methylpropanoate</code>，先看末尾 <code>propanoate</code> 画 3 碳主链与酯基 ➔ 再挂 <code>2-methyl</code> 与单键氧上的 <code>ethyl</code> ➔ <strong>最后补氢并逐颗碳默数“四键铁律”（一旦画出 5 键碳全题直接判 0 分！）</strong>，得 <code>(CH₃)₂CHCOOCH₂CH₃</code>。命名上半场通关，下一讲开启微观沸点大揭秘！", "start": 256.142, "end": 309.11}], "quickChecks": [{"q": "化合物 H₂NCH₂CH₂CH(OH)CH₃ 的正确系统 IUPAC 名称是什么？", "options": ["A. 1-aminobutan-3-ol", "B. 4-aminobutan-2-ol", "C. 3-hydroxybutan-1-amine", "D. 2-hydroxybutan-4-amine"], "ans": 1, "exp": "羟基（—OH）的命名优先序高于氨基（—NH₂），因此母体为醇（-ol），从靠近 —OH 的右端开始编号得 butan-2-ol，C-4 上的氨基作前缀 4-amino-，合称 4-aminobutan-2-ol。"}, {"q": "下列哪个化合物属于“未取代酰胺（unsubstituted amide）”？", "options": ["A. CH₃CH₂NH₂（ethanamine）", "B. CH₃CH₂CONH₂（propanamide）", "C. H₂NCH₂COOH（aminoethanoic acid）", "D. C₆H₅NH₂（phenylamine）"], "ans": 1, "exp": "未取代酰胺必须含有直接相连的羰基与氨基，即酰胺基 —CONH₂。CH₃CH₂CONH₂ 含 —CONH₂，为 propanamide；A 和 D 隔壁无 C=O 属于伯胺，C 属于氨基酸。"}], "duration": 309.62, "audioFile": "audio/04_29.9-29.10_酰胺与胺的命名及多官能团实战.mp3", "fullStart": 1039.52, "fullEnd": 1349.08}, {"id": "ep5", "epNum": "第 5 讲", "code": "29.11 (上)", "fileSlug": "05_29.11A_三大分子间作用力与沸点高低铁律", "titleZh": "微观作用力与沸点规律：范德华力、氢键与羧酸二聚体", "titleEn": "Intermolecular Forces & Boiling Point Trends Across Homologous Series", "goal": "分清范德华力（van der Waals' forces）、分子间氢键（intermolecular hydrogen bonds）与羧酸二聚体（dimer），掌握相近相对分子质量下的沸点总排名、同系物内部三大规律及 DSE 满分英文三段式答法。", "keyTerms": [{"en": "intermolecular forces", "zh": "分子间作用力"}, {"en": "van der Waals' forces", "zh": "范德华力"}, {"en": "intermolecular hydrogen bonds", "zh": "分子间氢键"}, {"en": "dimer", "zh": "二聚体（羧酸双氢键）"}, {"en": "comparable relative molecular mass", "zh": "相近相对分子质量"}, {"en": "area of contact", "zh": "分子接触面积"}], "boards": [{"id": "b5_1", "tag": "板书 1 · 相近相对分子质量沸点总榜 (29.11A)", "title": "相近相对分子质量（Mr ≈ 58–60）沸点铁律：谁有氢键？谁结成二聚体？", "html": "\n<svg class=\"board-svg\" viewBox=\"0 0 780 232\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"醇分子间氢键与羧酸双氢键二聚体对比图\">\n  <rect x=\"0\" y=\"0\" width=\"780\" height=\"232\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"390\" y=\"25\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#1e3a8a\">微观氢键对比：醇的单条氢键链 vs 羧酸成对缔合的双氢键“二聚体（Dimer）”</text>\n\n  <!-- Left: Alcohol H-bond -->\n  <rect x=\"18\" y=\"38\" width=\"356\" height=\"178\" rx=\"10\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <rect x=\"18\" y=\"38\" width=\"356\" height=\"28\" rx=\"10\" fill=\"#eff6ff\"/>\n  <text x=\"196\" y=\"57\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1d4ed8\">① 醇 Alcohol (propan-1-ol, b.p. 97 °C)</text>\n\n  <text x=\"78\" y=\"118\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">R — O<tspan baseline-shift=\"super\" font-size=\"10\" fill=\"#dc2626\">δ−</tspan> — H<tspan baseline-shift=\"super\" font-size=\"10\" fill=\"#2563eb\">δ+</tspan></text>\n  <line x1=\"145\" y1=\"114\" x2=\"215\" y2=\"114\" stroke=\"#e11d48\" stroke-width=\"2.6\" stroke-dasharray=\"5,4\"/>\n  <text x=\"180\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#e11d48\">hydrogen bond</text>\n  <text x=\"282\" y=\"118\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">:O<tspan baseline-shift=\"super\" font-size=\"10\" fill=\"#dc2626\">δ−</tspan>(H<tspan baseline-shift=\"super\" font-size=\"10\" fill=\"#2563eb\">δ+</tspan>) — R</text>\n\n  <text x=\"196\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\">含极性 <tspan font-weight=\"700\">—O—H</tspan>，分子间形成氢键</text>\n  <text x=\"196\" y=\"184\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#64748b\">（远强于醛/酮/酯/烷烃的范德华力）</text>\n\n  <!-- Right: Carboxylic acid Dimer -->\n  <rect x=\"394\" y=\"38\" width=\"368\" height=\"178\" rx=\"10\" fill=\"#ffffff\" stroke=\"#fda4af\" stroke-width=\"1.6\"/>\n  <rect x=\"394\" y=\"38\" width=\"368\" height=\"28\" rx=\"10\" fill=\"#ffe4e6\"/>\n  <text x=\"578\" y=\"57\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" fill=\"#be123c\">② 羧酸 Carboxylic Acid Dimer (ethanoic acid, b.p. 118 °C)</text>\n\n  <!-- Left acid molecule -->\n  <text x=\"458\" y=\"122\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">R — C</text>\n  <line x1=\"482\" y1=\"114\" x2=\"508\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"485\" y1=\"119\" x2=\"511\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"528\" y=\"96\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">O<tspan baseline-shift=\"super\" font-size=\"9.5\">δ−</tspan>:</text>\n\n  <line x1=\"482\" y1=\"126\" x2=\"508\" y2=\"146\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"536\" y=\"154\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13.5\" font-weight=\"800\" fill=\"#2563eb\">O—H<tspan baseline-shift=\"super\" font-size=\"9.5\">δ+</tspan></text>\n\n  <!-- Two dashed H-bonds -->\n  <line x1=\"548\" y1=\"92\" x2=\"606\" y2=\"92\" stroke=\"#e11d48\" stroke-width=\"2.6\" stroke-dasharray=\"5,4\"/>\n  <line x1=\"564\" y1=\"150\" x2=\"622\" y2=\"150\" stroke=\"#e11d48\" stroke-width=\"2.6\" stroke-dasharray=\"5,4\"/>\n  <text x=\"582\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#e11d48\">2 条氢键！</text>\n\n  <!-- Right acid molecule -->\n  <text x=\"636\" y=\"96\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13.5\" font-weight=\"800\" fill=\"#2563eb\">H<tspan baseline-shift=\"super\" font-size=\"9.5\">δ+</tspan>—O</text>\n  <text x=\"642\" y=\"154\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">:O<tspan baseline-shift=\"super\" font-size=\"9.5\">δ−</tspan></text>\n  <line x1=\"658\" y1=\"98\" x2=\"682\" y2=\"116\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"656\" y1=\"146\" x2=\"680\" y2=\"127\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"660\" y1=\"151\" x2=\"684\" y2=\"132\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <text x=\"712\" y=\"124\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">C — R</text>\n\n  <text x=\"578\" y=\"182\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#be123c\">每两个分子配对成二聚体（dimer），氢键比醇更广泛！</text>\n  <text x=\"578\" y=\"201\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#475569\">（而未取代酰胺 —CONH₂ 形成三维氢键网，沸点 221 °C 夺冠！）</text>\n</svg>\n\n                <table class=\"b-mini-table\" style=\"margin-top:10px;\">\n                  <thead>\n                    <tr>\n                      <th>沸点排名（Mr 相近）</th>\n                      <th>代表物质（b.p.）</th>\n                      <th>分子间作用力本质（HKDSE 核心采分点）</th>\n                    </tr>\n                  </thead>\n                  <tbody>\n                    <tr>\n                      <td><strong>1. 未取代酰胺 <code>amide</code></strong></td>\n                      <td><code>ethanamide</code> (<strong>221 °C</strong>)</td>\n                      <td>含两个 <code>N—H</code> 与强极性 <code>C=O</code>，形成<strong>三维广泛氢键网络（extensive H-bonds）</strong></td>\n                    </tr>\n                    <tr>\n                      <td><strong>2. 羧酸 <code>carboxylic acid</code></strong></td>\n                      <td><code>ethanoic acid</code> (<strong>118 °C</strong>)</td>\n                      <td>每两个分子通过 2 条氢键缔合成<strong>二聚体（dimer）</strong>，氢键比醇更广泛</td>\n                    </tr>\n                    <tr>\n                      <td><strong>3. 醇 <code>alcohol</code></strong></td>\n                      <td><code>propan-1-ol</code> (<strong>97 °C</strong>)</td>\n                      <td>含极性 <code>—OH</code>，形成较强的<strong>分子间氢键（intermolecular H-bonds）</strong></td>\n                    </tr>\n                    <tr>\n                      <td><strong>4. 伯胺 <code>primary amine</code></strong></td>\n                      <td><code>propan-1-amine</code> (<strong>48 °C</strong>)</td>\n                      <td>有 <code>N—H···N</code> 氢键，但 <strong>N 电负性低于 O</strong>，氢键明显比醇弱</td>\n                    </tr>\n                    <tr>\n                      <td><strong>5. 酮 / 醛 / 酯 / 卤代烷</strong></td>\n                      <td><code>propanone</code> (56 °C) / <code>propanal</code> (49 °C)</td>\n                      <td><strong>极性分子（polar）</strong>，范德华力较烷烃强，但<strong>自身分子间绝无氢键！</strong></td>\n                    </tr>\n                    <tr>\n                      <td><strong>6. 烷烃 / 烯烃</strong></td>\n                      <td><code>butane</code> (<strong>−0.5 °C</strong>)</td>\n                      <td><strong>非极性（non-polar）</strong>，仅含<strong>微弱范德华力（weak van der Waals' forces）</strong></td>\n                    </tr>\n                  </tbody>\n                </table>\n                ", "start": 0.25, "end": 178.726}, {"id": "b5_2", "tag": "板书 2 · 同系物内部三大规律", "title": "同一同系物内部的沸点变化：碳链长度、卤代烷反直觉排序与支链接触面积", "html": "\n                <div class=\"board-grid-2\">\n                  <div class=\"b-box b-blue\">\n                    <div class=\"b-box-title\">① 碳链增长 &amp; 卤代烷尺寸效应</div>\n                    <div class=\"b-eq\">CH<sub>3</sub>CH<sub>2</sub>Cl (12 °C) &lt; CH<sub>3</sub>CH<sub>2</sub>Br (38 °C) &lt; CH<sub>3</sub>CH<sub>2</sub>I (72 °C)</div>\n                    <ul class=\"b-points\">\n                      <li>直链碳数越多 ➔ 分子体积 / 电子数越大 ➔ <strong>范德华力越强</strong> ➔ 沸点越高。</li>\n                      <li>⚠️ <strong>卤代烷高频坑</strong>：沸点是 <strong><code>R—I &gt; R—Br &gt; R—Cl</code></strong>！虽然 Cl 电负性最大，但 I 原子半径与电子数大得多，范德华力增幅占绝对主导！</li>\n                    </ul>\n                  </div>\n                  <div class=\"b-box b-amber\">\n                    <div class=\"b-box-title\">② 支链效应 &amp; 多羟基黏度效应</div>\n                    <div class=\"b-eq\">butan-1-ol (118°) &gt; 2-methylpropan-1-ol (108°) &gt; 2-methylpropan-2-ol (82°)</div>\n                    <ul class=\"b-points\">\n                      <li>同分异构体<strong>支链越多</strong> ➔ 分子越接近球形（<strong>more spherical</strong>）➔ <strong>接触面积越小（smaller area of contact）</strong>➔ 范德华力越弱，沸点越低。</li>\n                      <li><code>—OH</code> 越多（如甘油 <code>propane-1,2,3-triol</code>），氢键越广泛，沸点与<strong>黏度（viscosity）</strong>越高。</li>\n                    </ul>\n                  </div>\n                </div>\n                ", "start": 179.346, "end": 268.678}, {"id": "b5_3", "tag": "板书 3 · DSE 论述题满分模板", "title": "HKDSE 比较沸点高低论述题（3 Marks）标准英文三步套路与零分红线", "html": "\n                <div class=\"b-box b-rose\" style=\"margin-bottom:10px;\">\n                  <div class=\"b-box-title\">★ 经典同分异构体悬殊对比：丙酸 Propanoic acid (141 °C) vs 乙酸甲酯 Methyl ethanoate (57 °C)</div>\n                  <p class=\"b-tip-text\">两者分子式同为 <code>C₃H₆O₂</code>（<em>M</em><sub>r</sub> = 74.0），但丙酸形成双氢键<strong>二聚体（dimers）</strong>，而乙酸甲酯分子间<strong>完全没有氢键</strong>，沸点相差整整 84 °C！</p>\n                </div>\n                <div class=\"b-quote\">\n                  <div class=\"b-quote-en\">\n                    <strong>[1M 点作用力]</strong> Molecules of A are held together by strong <strong>intermolecular hydrogen bonds</strong> in addition to van der Waals' forces, whereas molecules of B have weak <strong>van der Waals' forces</strong> only (no intermolecular hydrogen bonds).<br>\n                    <strong>[1M 比广泛/强弱]</strong> (If comparing acid vs alcohol): Each pair of carboxylic acid molecules forms two hydrogen bonds to give <strong>dimers</strong>, so hydrogen bonding in acid is <strong>more extensive</strong> than in alcohol.<br>\n                    <strong>[1M 扣热能结论]</strong> Hence, <strong>more heat energy is required to overcome</strong> the stronger intermolecular attractions between molecules of A during boiling.\n                  </div>\n                  <div class=\"b-quote-zh\">🚫 <strong>考场零分死穴</strong>：沸腾是物理变化！答题中一旦出现 <em>\"break covalent bonds\"</em>（打断共价键），整道题直接判 <strong>0 分</strong>！</div>\n                </div>\n                ", "start": 269.298, "end": 324.354}], "turns": [{"speaker": "teacher", "role": "concept", "stepTag": "🎯 下半场揭幕 · 沸腾绝不断共价键", "boardId": "b5_1", "displayHtml": "欢迎进入下半场第 5 讲（<code>29.11 上</code>），攻克必考的<strong>沸点（boiling point）</strong>规律！先立保命底线：液体沸腾是物理变化，分子内共价键纹丝不动，克服的只是<strong>分子间作用力（intermolecular forces）</strong>！非极性烷烃（如 <code>butane</code>，沸点 <code>−0.5 °C</code>）仅含微弱的<strong>范德华力（van der Waals' forces）</strong>，极易沸腾。", "start": 0.25, "end": 43.714}, {"speaker": "teacher", "role": "concept", "stepTag": "📐 氢键铁门槛 · 为何醛酮酯自身无氢键", "boardId": "b5_1", "displayHtml": "什么分子自身能形成强得多的<strong>分子间氢键（intermolecular hydrogen bonds）</strong>？看<strong>第 1 张板书</strong>的铁门槛：分子必须拥有<strong>直接连在 F、O、N 上的 H 原子</strong>！卤代烷、醛、酮、酯虽属<strong>极性分子（polar molecules）</strong>，范德华力强于同质量烷烃，但它们的 H 全连在 C 上——故<strong>纯醛、纯酮、纯酯分子自身之间绝无氢键</strong>！", "start": 44.054, "end": 91.358}, {"speaker": "teacher", "role": "concept", "stepTag": "🏆 氢键阶梯 · 伯胺 vs 醇 vs 羧酸二聚体", "boardId": "b5_1", "displayHtml": "在<strong>相近相对分子质量（comparable <em>M</em><sub>r</sub> ≈ 58–60）</strong>下拾级而上：伯胺因 <strong>N 电负性低于 O</strong>，氢键偏弱（<code>propan-1-amine</code> 48 °C）➔ 醇含强极性 <code>—OH</code> 形成牢固氢键（<code>propan-1-ol</code> 97 °C）➔ 羧酸每两个分子面对面通过<strong>两条氢键配对成二聚体（<code>dimer</code>）</strong>，氢键比醇更广泛，<code>ethanoic acid</code> 沸点达 118 °C！", "start": 91.698, "end": 139.986}, {"speaker": "teacher", "role": "concept", "stepTag": "👑 沸点总冠军 · 未取代酰胺三维氢键网", "boardId": "b5_1", "displayHtml": "谁是全场沸点总冠军？看总榜第 1 名——<strong>未取代酰胺（<code>ethanamide</code>）</strong>！每个分子拥有两个极性 <code>N—H</code> 氢与强电负性 <code>C=O</code> 氧，织成三维立体<strong>极为广泛的分子间氢键网（<code>extensive intermolecular hydrogen bonds</code>）</strong>，沸点飙升至惊人的 <strong>221 °C</strong>！", "start": 140.326, "end": 178.726}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 卤代烷反直觉考点 · 尺寸打败电负性", "boardId": "b5_2", "displayHtml": "切到<strong>第 2 张板书</strong>左框！直链越长，分子尺寸与电子数越大，范德华力越强。⚠️ <strong>特别警惕卤代烷反直觉陷阱</strong>：同碳数卤代烷沸点必然是 <strong><code>R—I &gt; R—Br &gt; R—Cl</code></strong>！虽然氯电负性最大，但从 Cl 到 I 原子半径与电子数剧增，分子体积增大带来的范德华力增幅占绝对主导！", "start": 179.346, "end": 223.506}, {"speaker": "teacher", "role": "example", "stepTag": "🔍 支链接触面积与多羟基黏度规律", "boardId": "b5_2", "displayHtml": "再看右框两条规律：① 同分异构体<strong>支链越多</strong> ➔ 分子越接近球形（<strong><code>more spherical</code></strong>）➔ <strong>接触面积越小（<code>smaller area of contact</code>）</strong>➔ 范德华力越弱、沸点越低；② <code>—OH</code> 数目越多（如甘油 <code>propane-1,2,3-triol</code>），氢键越密集，沸点与液体<strong>黏度（<code>viscosity</code>）</strong>均显著上升。", "start": 223.846, "end": 268.678}, {"speaker": "teacher", "role": "summary", "stepTag": "📝 满分三段式模板 · 衔接蒸馏分离原理", "boardId": "b5_3", "displayHtml": "看<strong>第 3 张板书</strong>！如对比同分异构体 <code>propanoic acid</code> (141 °C) 与 <code>methyl ethanoate</code> (57 °C)，直套 <strong>3 分标准英文三段式</strong>：① 点明双方作用力种类 ➔ ② 对比强弱或广泛度（羧酸写 <code>dimers</code>）➔ ③ 总结需更多热能克服（<code>more heat energy is required to overcome...</code>）。🚫 <strong>写 <em>break covalent bonds</em> 直接 0 分！</strong>下一讲进入收官课：水溶性与液液分层！", "start": 269.298, "end": 324.354}], "quickChecks": [{"q": "以下四种化合物相对分子质量（Mr）均在 58–60 之间，按沸点由低至高（increasing order of boiling points）排列正确的是？", "options": ["A. butane < propanal < propan-1-ol < ethanoic acid", "B. butane < propan-1-ol < propanal < ethanoic acid", "C. propanal < butane < propan-1-ol < ethanoic acid", "D. butane < propanal < ethanoic acid < propan-1-ol"], "ans": 0, "exp": "butane 非极性仅有微弱范德华力（−0.5 °C） < propanal 极性分子有较强范德华力但无氢键（49 °C） < propan-1-ol 有分子间氢键（97 °C） < ethanoic acid 形成双氢键二聚体 dimer，氢键更广泛（118 °C）。"}, {"q": "关于氯乙烷（CH₃CH₂Cl）与碘乙烷（CH₃CH₂I）的沸点高低及原因，下列叙述哪项正确？", "options": ["A. CH₃CH₂Cl 沸点更高，因为氯电负性更高、C—Cl 键极性更强", "B. CH₃CH₂I 沸点更高，因为 C—I 共价键更强、沸腾时更难打断", "C. CH₃CH₂I 沸点更高，因为碘乙烷分子体积与电子数更大，分子间范德华力（van der Waals' forces）更强", "D. CH₃CH₂Cl 沸点更高，因为氯乙烷分子间能形成氢键"], "ans": 2, "exp": "沸腾只克服分子间作用力（B 错在打断共价键）；卤代烷均无氢键（D 错）；碘原子半径与电子数远大于氯，使 CH₃CH₂I 分子间的 van der Waals' forces 显著强于 CH₃CH₂Cl，故 CH₃CH₂I 沸点更高！"}], "duration": 324.86, "audioFile": "audio/05_29.11A_三大分子间作用力与沸点高低铁律.mp3", "fullStart": 1350.58, "fullEnd": 1675.38}, {"id": "ep6", "epNum": "第 6 讲", "code": "29.11 (下)", "fileSlug": "06_29.11B_水溶性规律与物态密度分层判别", "titleZh": "水溶性之谜、常温物态特例与液液分层上下层判别", "titleEn": "Water Solubility, Physical States at r.t.p. & Density Layer Separation", "goal": "破解“纯丙酮无氢键却能与水互溶”的高频辨析，掌握长非极性烃基降低水溶性的英文采分句，熟记 ethanamide 常温固体等物态特例与“上酯下溴”液液分层密度铁律。", "keyTerms": [{"en": "miscible", "zh": "互溶（任意比例混溶）"}, {"en": "lone pairs of electrons", "zh": "孤对电子（氢键受体）"}, {"en": "non-polar hydrocarbon chain", "zh": "非极性烃基链（疏水）"}, {"en": "pleasant fruity smell", "zh": "宜人果香气味（酯特征）"}, {"en": "upper / lower layer", "zh": "上层 / 下层液层"}], "boards": [{"id": "b6_1", "tag": "板书 1 · 水溶性入场券 (29.11B-1)", "title": "水溶性的本质：能不能跟水分子牵起氢键（Form H-Bonds with Water）？", "html": "\n                <div class=\"board-grid-2\">\n                  <div class=\"b-box b-teal\">\n                    <div class=\"b-box-title\">✅ 易溶于水阵营（短链 C₁–C₃/C₄）</div>\n                    <ul class=\"b-points\">\n                      <li><strong>短链醇、羧酸、伯胺、未取代酰胺</strong>：含 <code>—OH</code>、<code>—COOH</code>、<code>—NH₂</code>、<code>—CONH₂</code>，与水形成氢键，短链醇/酸与水<strong>任意比例互溶（miscible）</strong>。</li>\n                      <li>★ <strong>短链醛与酮（如 <code>propanal</code>、<code>propanone</code>）</strong>：虽自身无氢键，但 <code>&gt;C=O</code> 氧上的<strong>孤对电子（lone pairs）能与水分子的 H<sup>δ+</sup> 形成氢键</strong>，故同样易溶于水！</li>\n                    </ul>\n                  </div>\n                  <div class=\"b-box b-rose\">\n                    <div class=\"b-box-title\">❌ 难溶 / 不溶于水阵营</div>\n                    <ul class=\"b-points\">\n                      <li><strong>烷烃、烯烃、卤代烷（<code>R—X</code>）</strong>：完全<strong>不溶于水（insoluble）</strong>！它们与水之间微弱的范德华力，<strong>不足以克服水分子之间原有的强氢键</strong>。</li>\n                      <li><strong>常见酯（如 <code>ethyl ethanoate</code>）</strong>：两侧被疏水烃基包夹，难溶/微溶于水，混合后分层并散发<strong>果香气味（fruity smell）</strong>。</li>\n                    </ul>\n                  </div>\n                </div>\n                ", "start": 0.25, "end": 128.538}, {"id": "b6_2", "tag": "板书 2 · 疏水长尾巴效应 (29.11B-2)", "title": "为什么乙醇与水互溶，而己-1-醇（Hexan-1-ol）几乎不溶于水？[2M 标准答法]", "html": "\n                <div class=\"b-scheme\">\n<pre>CH₃CH₂—OH (ethanol：完全互溶 miscible)  ──►  CH₃CH₂CH₂CH₂—OH (7.9 g/100g水)  ──►  CH₃(CH₂)₅—OH (hexan-1-ol：几乎不溶！)\n └─短烃基─┘                                                                       └───── 超长非极性疏水尾巴！ ─────┘</pre>\n                </div>\n                <div class=\"b-quote\">\n                  <div class=\"b-quote-en\">\n                    <strong>[1M 肯同点]</strong> The <code>—OH</code> group of ethanol forms <strong>hydrogen bonds with water molecules</strong> (and its hydrocarbon chain is very short).<br>\n                    <strong>[1M 指差异]</strong> <code>Hexan-1-ol</code> has a much longer / larger <strong>non-polar hydrocarbon chain</strong> which cannot form hydrogen bonds with water and <strong>hinders the formation of hydrogen bonds among water molecules</strong>, greatly reducing its solubility.\n                  </div>\n                </div>\n                ", "start": 129.158, "end": 175.478}, {"id": "b6_3", "tag": "板书 3 · 物态特例与上下层铁律 (29.11B-3)", "title": "常温物态速查（小心固体乙酰胺！）与分液分层“上酯烃、下溴氯”铁律", "html": "\n<svg class=\"board-svg\" viewBox=\"0 0 780 236\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"丙酮与水氢键及酯与溴代烷分层上下层对比图\">\n  <rect x=\"0\" y=\"0\" width=\"780\" height=\"236\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"390\" y=\"25\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">水溶性与液液分层视觉速记：左看短链酮溶水机制，右看“上酯下溴”密度分层铁律！</text>\n\n  <!-- Left: Propanone + Water H-bond -->\n  <rect x=\"16\" y=\"38\" width=\"320\" height=\"182\" rx=\"10\" fill=\"#ffffff\" stroke=\"#5eead4\" stroke-width=\"1.5\"/>\n  <rect x=\"16\" y=\"38\" width=\"320\" height=\"28\" rx=\"10\" fill=\"#ccfbf1\"/>\n  <text x=\"176\" y=\"57\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f766e\">为什么纯丙酮无氢键，却能与水互溶？</text>\n  <text x=\"95\" y=\"118\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13.5\" font-weight=\"800\" fill=\"#334155\">(CH₃)₂C＝<tspan fill=\"#dc2626\">O:</tspan></text>\n  <line x1=\"146\" y1=\"114\" x2=\"206\" y2=\"114\" stroke=\"#0d9488\" stroke-width=\"2.6\" stroke-dasharray=\"5,4\"/>\n  <text x=\"176\" y=\"102\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f766e\">H-bond!</text>\n  <text x=\"256\" y=\"118\" text-anchor=\"middle\" font-family=\"SF Mono, Menlo, monospace\" font-size=\"13.5\" font-weight=\"800\" fill=\"#2563eb\">H<tspan baseline-shift=\"super\" font-size=\"9.5\">δ+</tspan>—O—H</text>\n  <text x=\"176\" y=\"156\" text-anchor=\"middle\" font-size=\"11.8\" fill=\"#0f172a\" font-weight=\"700\">羰基氧的孤对电子（lone pairs）</text>\n  <text x=\"176\" y=\"175\" text-anchor=\"middle\" font-size=\"11.8\" fill=\"#0f766e\" font-weight=\"700\">能与水分子形成氢键！</text>\n  <text x=\"176\" y=\"198\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">（切勿把“自身无氢键”背成“不溶于水”！）</text>\n\n  <!-- Right: Two Test Tubes Layer Separation -->\n  <rect x=\"350\" y=\"38\" width=\"414\" height=\"182\" rx=\"10\" fill=\"#ffffff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/>\n  <rect x=\"350\" y=\"38\" width=\"414\" height=\"28\" rx=\"10\" fill=\"#eff6ff\"/>\n  <text x=\"557\" y=\"57\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1d4ed8\">⚠️ 不溶有机物 + 水振荡静置：有机层未必总在上面！</text>\n\n  <!-- Tube A: Ester floats -->\n  <rect x=\"388\" y=\"80\" width=\"90\" height=\"106\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <rect x=\"390\" y=\"96\" width=\"86\" height=\"38\" fill=\"#fde68a\"/>\n  <rect x=\"390\" y=\"134\" width=\"86\" height=\"50\" rx=\"10\" fill=\"#bfdbfe\"/>\n  <line x1=\"390\" y1=\"134\" x2=\"476\" y2=\"134\" stroke=\"#b45309\" stroke-width=\"1.5\"/>\n  <text x=\"433\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#92400e\">酯 / 烃 (上层)</text>\n  <text x=\"433\" y=\"162\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e40af\">水 Water (下)</text>\n  <text x=\"433\" y=\"204\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">ethyl ethanoate + 果香</text>\n  <text x=\"433\" y=\"217\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#64748b\">密度 &lt; 1.0 g cm⁻³</text>\n\n  <!-- Tube B: Bromoalkane sinks -->\n  <rect x=\"614\" y=\"80\" width=\"90\" height=\"106\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <rect x=\"616\" y=\"96\" width=\"86\" height=\"44\" fill=\"#bfdbfe\"/>\n  <rect x=\"616\" y=\"140\" width=\"86\" height=\"44\" rx=\"10\" fill=\"#fecdd3\"/>\n  <line x1=\"616\" y1=\"140\" x2=\"702\" y2=\"140\" stroke=\"#be123c\" stroke-width=\"1.5\"/>\n  <text x=\"659\" y=\"121\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1e40af\">水 Water (上)</text>\n  <text x=\"659\" y=\"165\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#9f1239\">溴代烷 (下层!)</text>\n  <text x=\"659\" y=\"204\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#be123c\">1-bromobutane / CHCl₃</text>\n  <text x=\"659\" y=\"217\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#64748b\">密度 &gt; 1.0 g cm⁻³</text>\n\n  <text x=\"546\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"800\" fill=\"#475569\">VS</text>\n</svg>\n\n                <div class=\"b-note\" style=\"margin-top:8px;\">📌 <strong>常温物态三大特例必背</strong>：① 甲醛 <code>methanal</code>、<code>C₁–C₄</code> 烷/烯、一氯甲烷/乙烷在常温常压下是<strong>气体（gases）</strong>；② 未取代酰胺除 <code>methanamide</code> 为液体外，<strong><code>ethanamide</code> 及以上常温下全是结晶固体（solids）</strong>；③ 分层时<strong>溴代烷、碘代烷及 <code>CH₂Cl₂ / CHCl₃ / CCl₄</code> 密度大于水，沉在下层（lower layer）</strong>！</div>\n                ", "start": 176.098, "end": 320.13}], "turns": [{"speaker": "teacher", "role": "concept", "stepTag": "🎯 水溶性密码 · 水分子的氢键入场券", "boardId": "b6_1", "displayHtml": "欢迎来到第 6 讲压轴课（<code>29.11 下</code>）！看<strong>第 1 张板书</strong>：水分子间原本存在强氢键，外来分子想溶入水中，必须<strong>能与水分子形成氢键</strong>以补偿能量！因此短链醇、羧酸、伯胺与酰胺极易溶于水，甚至与水任意比例<strong>互溶（<code>miscible</code>）</strong>。", "start": 0.25, "end": 51.874}, {"speaker": "teacher", "role": "concept", "stepTag": "❌ 不溶阵营 · 微弱范德华力拆不开水氢键", "boardId": "b6_1", "displayHtml": "相反看右框：烷烃、烯烃与卤代烷与水分子间微弱的范德华力，<strong>不足以克服水分子之间原有的强氢键（<code>not strong enough to overcome the strong hydrogen bonds between water molecules</code>）</strong>，故完全不溶于水；常见酯类（如 <code>ethyl ethanoate</code>）同样难溶或微溶于水。", "start": 52.214, "end": 82.982}, {"speaker": "teacher", "role": "trap", "stepTag": "⚠️ 经典迷思破解 · 纯丙酮无氢键却溶水", "boardId": "b6_1", "displayHtml": "★ <strong>破解 DSE 灵魂拷问</strong>：为什么纯丙酮（<code>propanone</code>）与纯丙醛（<code>propanal</code>）<strong>自身分子间无氢键，倒入水中却易溶</strong>？记住：自身无氢键 ≠ 不能与水牵氢键！醛、酮羰基氧原子上的<strong>孤对电子（<code>lone pairs of electrons</code>）能与水分子的 <code>H<sup>δ+</sup></code> 形成氢键</strong>，故短链醛、酮依然易溶于水！", "start": 83.322, "end": 128.538}, {"speaker": "teacher", "role": "example", "stepTag": "📐 疏水大尾巴 · 乙醇与己一醇对比模板", "boardId": "b6_2", "displayHtml": "切到<strong>第 2 张板书</strong>：为什么 <code>ethanol</code> 与水完全互溶，而 <code>hexan-1-ol</code> 几乎不溶？<strong>2 分标准英文答法</strong>：① <code>Ethanol</code> 的 <code>—OH</code> 与水形成氢键且烃链极短 [1M]；② <code>Hexan-1-ol</code> 具有长得多的<strong>非极性烃基链（<code>much longer non-polar hydrocarbon chain</code>）</strong>，不能与水形成氢键，且<strong>阻碍水分子间形成氢键（<code>hinders hydrogen bond formation among water molecules</code>）</strong> [1M]！", "start": 129.158, "end": 175.478}, {"speaker": "teacher", "role": "trap", "stepTag": "🧊 常温物态特例 · 警惕固体乙酰胺", "boardId": "b6_3", "displayHtml": "来到<strong>第 3 张板书</strong>先锁死物态特例：① <code>C₁–C₄</code> 烷/烯、甲醛 <strong><code>methanal</code></strong> 及一氯甲烷/乙烷在常温常压下均为<strong>气体（gases）</strong>；② ⚠️ <strong>未取代酰胺特例</strong>：除 <code>methanamide</code> 为液体外，从二碳 <strong><code>ethanamide</code> 起常温下全是白色结晶固体（solids）</strong>！", "start": 176.098, "end": 216.298}, {"speaker": "teacher", "role": "trap", "stepTag": "🧪 分液分层铁律 · 上酯果香 vs 下溴重油", "boardId": "b6_3", "displayHtml": "看右图两支试管的<strong>分液分层（separating funnel）密度铁律</strong>：烃、长链醇与<strong>酯（密度 &lt; 1.0 g cm⁻³）浮在上层（<code>upper layer</code>）</strong>，酯与水振荡可观察到分层及<strong>宜人果香气味（<code>pleasant fruity smell</code>）</strong>；⚠️ <strong>反之，所有溴代烷（如 <code>1-bromobutane</code>）、碘代烷及多氯代烷（<code>CH₂Cl₂</code>、<code>CHCl₃</code>、<code>CCl₄</code>）密度均大于水，静置后沉在下层（<code>lower layer</code>）</strong>！", "start": 216.638, "end": 273.374}, {"speaker": "teacher", "role": "summary", "stepTag": "🔗 全章圆满收官 · 昂首迈向 Unit 30 & 31", "boardId": "b6_3", "displayHtml": "🎉 恭喜圆满完成 <strong>Unit 29 全六讲预习课</strong>！前四讲我们攻克了八大同系物的 IUPAC 系统命名与易错拼写红线；后两讲用<strong>范德华力、氢键与羧酸二聚体（<code>dimer</code>）</strong>打通了沸点、水溶性与液液分层。打牢这座基石后，迈向 Unit 30（同分异构）与 Unit 31（各官能团典型反应）必将得心应手！快完成下方快问快答验收成果吧！", "start": 273.714, "end": 320.13}], "quickChecks": [{"q": "为什么纯丙酮（propanone, CH₃COCH₃）分子自身之间没有氢键，却能与水以任意比例互溶（miscible with water）？", "options": ["A. 丙酮属于非极性分子，能自由穿插在水分子空隙中", "B. 丙酮羰基氧原子上的孤对电子（lone pairs）能与水分子的氢原子形成氢键", "C. 丙酮溶于水时先打断 C=O 共价键生成丙-2-二醇", "D. 丙酮与水分子之间的微弱范德华力比水分子间的氢键更强"], "ans": 1, "exp": "丙酮虽无连在 O 上的 H（纯丙酮分子间无氢键），但其 >C=O 氧原子具有高电负性与孤对电子（lone pairs），在水中能与水分子的 Hδ+ 形成分子间氢键，且碳链很短，故与水互溶。"}, {"q": "在常温常压下，下列关于乙酰胺（ethanamide）、乙酸乙酯（ethyl ethanoate）和 1-溴丁烷（1-bromobutane）的说法哪项完全正确？", "options": ["A. 乙酰胺（ethanamide）在常温常压下是无色气体", "B. 乙酸乙酯与水振荡后完全互溶成均一透明溶液", "C. 1-溴丁烷与水振荡静置后，1-溴丁烷位于下层（lower layer）", "D. 1-溴丁烷能与水形成氢键而易溶于水"], "ans": 2, "exp": "C 正确！1-溴丁烷不溶于水且密度（约 1.27 g cm⁻³）大于水，静置后沉在下层（lower layer）。A 错：ethanamide 因广泛三维氢键网在常温下是白色结晶固体；B 错：乙酸乙酯难溶于水，浮在上层并散发果香气味；D 错：卤代烷不溶于水。"}], "duration": 320.64, "audioFile": "audio/06_29.11B_水溶性规律与物态密度分层判别.mp3", "fullStart": 1676.88, "fullEnd": 1997.46}]};
+
+    (function () {
+      const data = window.COURSE_DATA;
+      const episodes = data.episodes;
+      const STORAGE_KEY = 'u29_audio_preview_v1';
+
+      let saved = {};
+      try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) {}
+
+      const state = {
+        currentEpIdx: typeof saved.currentEpIdx === 'number' && saved.currentEpIdx < episodes.length ? saved.currentEpIdx : 0,
+        doneEps: saved.doneEps || {},
+        autoScroll: true,
+        autoPlayNext: true,
+        speed: saved.speed || 1.0
+      };
+
+      const audio = document.getElementById('classroom-audio');
+      const epStrip = document.getElementById('ep-strip');
+      const epHero = document.getElementById('ep-hero');
+      const boardsContainer = document.getElementById('boards-container');
+      const transcriptList = document.getElementById('transcript-list');
+      const quizContainer = document.getElementById('quiz-container');
+
+      const playBtn = document.getElementById('play-btn');
+      const seekSlider = document.getElementById('seek-slider');
+      const curTimeEl = document.getElementById('cur-time');
+      const durTimeEl = document.getElementById('dur-time');
+      const dockEpLabel = document.getElementById('dock-ep-label');
+      const speedSelect = document.getElementById('speed-select');
+      const autoScrollBtn = document.getElementById('auto-scroll-toggle');
+      const autoplayBtn = document.getElementById('autoplay-btn');
+      const downloadMerged = document.getElementById('download-merged-link');
+      const downloadEp = document.getElementById('download-ep-link');
+      const totalDurBadge = document.getElementById('total-dur-badge');
+      const companionLink = document.getElementById('companion-site-link');
+      const unit31Link = document.getElementById('unit31-site-link');
+      const handoutMdLink = document.getElementById('handout-md-link');
+
+      if (/\.github\.io$/i.test(window.location.hostname)) {
+        companionLink.href = 'https://kenlin666bot.github.io/mastering-organic-chem/';
+        unit31Link.href = 'https://kenlin666bot.github.io/unit31-audio-preview/';
+        handoutMdLink.href = 'https://github.com/KenLin666Bot/unit29-audio-preview/blob/main/Unit29_%E5%8F%8C%E8%AF%AD%E8%AF%BE%E5%A0%82%E8%AE%B2%E4%B9%89%E4%B8%8E%E9%80%90%E5%AD%97%E7%A8%BF.md';
+      }
+
+      let isDraggingSlider = false;
+      let activeTurnIdx = -1;
+      let activeBoardId = null;
+
+      function fmtTime(sec) {
+        if (!isFinite(sec) || sec < 0) sec = 0;
+        const m = Math.floor(sec / 60);
+        const s = Math.floor(sec % 60);
+        return String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      }
+
+      function saveState() {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            currentEpIdx: state.currentEpIdx,
+            doneEps: state.doneEps,
+            speed: state.speed
+          }));
+        } catch (e) {}
+      }
+
+      downloadMerged.href = encodeURI(data.mergedAudioFile);
+      totalDurBadge.textContent = fmtTime(data.totalDuration);
+      speedSelect.value = String(state.speed);
+
+      function renderEpisodeStrip() {
+        epStrip.innerHTML = episodes.map((ep, idx) => {
+          const isDone = !!state.doneEps[ep.id];
+          const activeCls = idx === state.currentEpIdx ? 'active' : '';
+          return `
+            <button class="ep-tab ${activeCls}" data-ep-idx="${idx}">
+              <div class="ep-tab-top">
+                <span>${ep.epNum} · ${ep.code}</span>
+                ${isDone ? '<span class="ep-done-dot">✓ 已学完</span>' : ''}
+              </div>
+              <div class="ep-tab-title">${ep.titleZh}</div>
+              <div class="ep-tab-meta">
+                <span>🎧 约 ${fmtTime(ep.duration)}</span>
+                <span>${ep.boards.length} 张板书</span>
+              </div>
+            </button>
+          `;
+        }).join('');
+
+        epStrip.querySelectorAll('.ep-tab').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const idx = Number(btn.getAttribute('data-ep-idx'));
+            loadEpisode(idx, true);
+          });
+        });
+      }
+
+      function loadEpisode(idx, autoPlay) {
+        state.currentEpIdx = idx;
+        activeTurnIdx = -1;
+        activeBoardId = null;
+        saveState();
+        renderEpisodeStrip();
+
+        const ep = episodes[idx];
+
+        epHero.innerHTML = `
+          <div class="ep-hero-kicker">
+            <span>📚 Mastering Chemistry · Unit 29</span>
+            <span>|</span>
+            <span>${ep.epNum}（课本 ${ep.code}）</span>
+          </div>
+          <h1 class="ep-hero-title">${ep.titleZh}</h1>
+          <div class="ep-hero-en">${ep.titleEn}</div>
+          <div class="ep-goal-box">🎯 <strong>本讲预习目标：</strong>${ep.goal}</div>
+          <div class="term-row">
+            ${ep.keyTerms.map(t => `<span class="term-chip"><b>${t.en}</b> · ${t.zh}</span>`).join('')}
+          </div>
+        `;
+
+        boardsContainer.innerHTML = ep.boards.map((b, bIdx) => `
+          <section class="board-card ${bIdx === 0 ? 'is-active-board' : ''}" id="card-${b.id}" data-board-id="${b.id}">
+            <div class="board-head">
+              <div class="board-tag-wrap">
+                <span class="board-tag">${b.tag}</span>
+                <span class="live-pill">● 正在讲授此板书</span>
+              </div>
+              <button class="board-jump-btn" data-jump="${b.start}">▶ 跳到此板书 (${fmtTime(b.start)})</button>
+            </div>
+            <h2 class="board-title">${b.title}</h2>
+            <div class="board-body">${b.html}</div>
+          </section>
+        `).join('');
+
+        boardsContainer.querySelectorAll('.board-jump-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const t = parseFloat(btn.getAttribute('data-jump') || '0');
+            seekAndPlay(t);
+          });
+        });
+
+        transcriptList.innerHTML = ep.turns.map((t, tIdx) => `
+          <div class="turn-bubble role-${t.role || 'concept'}" id="turn-${tIdx}" data-turn-idx="${tIdx}" data-start="${t.start}">
+            <div class="turn-meta">
+              <span class="speaker-name">${t.stepTag}</span>
+              <span class="turn-time">${fmtTime(t.start)}</span>
+            </div>
+            <div class="turn-text">${t.displayHtml}</div>
+          </div>
+        `).join('');
+
+        transcriptList.querySelectorAll('.turn-bubble').forEach(div => {
+          div.addEventListener('click', () => {
+            const t = parseFloat(div.getAttribute('data-start') || '0');
+            seekAndPlay(t);
+          });
+        });
+
+        quizContainer.innerHTML = `
+          <h3 class="quiz-head">⚡ 听完测一测：30 秒预习快问快答</h3>
+          ${ep.quickChecks.map((q, qIdx) => `
+            <div class="q-item" data-q-idx="${qIdx}">
+              <div class="q-stem">${qIdx + 1}. ${q.q}</div>
+              <div class="q-opts">
+                ${q.options.map((opt, oIdx) => `
+                  <button class="q-opt-btn" data-q="${qIdx}" data-o="${oIdx}">${opt}</button>
+                `).join('')}
+              </div>
+              <div class="q-exp" id="q-exp-${qIdx}">💡 <strong>解析：</strong>${q.exp}</div>
+            </div>
+          `).join('')}
+        `;
+
+        quizContainer.querySelectorAll('.q-opt-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const qIdx = Number(btn.getAttribute('data-q'));
+            const oIdx = Number(btn.getAttribute('data-o'));
+            const qObj = ep.quickChecks[qIdx];
+            const parent = btn.closest('.q-item');
+            parent.querySelectorAll('.q-opt-btn').forEach((b, i) => {
+              b.classList.remove('correct', 'wrong');
+              if (i === qObj.ans) b.classList.add('correct');
+            });
+            if (oIdx !== qObj.ans) btn.classList.add('wrong');
+            document.getElementById(`q-exp-${qIdx}`).style.display = 'block';
+          });
+        });
+
+        audio.src = encodeURI(ep.audioFile);
+        audio.playbackRate = state.speed;
+        downloadEp.href = encodeURI(ep.audioFile);
+        dockEpLabel.textContent = `${ep.epNum} (${ep.code}) · ${ep.titleZh}`;
+        seekSlider.max = String(ep.duration);
+        seekSlider.value = '0';
+        curTimeEl.textContent = '00:00';
+        durTimeEl.textContent = fmtTime(ep.duration);
+
+        if (autoPlay) {
+          audio.play().catch(() => {});
+        } else {
+          playBtn.textContent = '▶ 开始听课';
+        }
+      }
+
+      function seekAndPlay(targetSec) {
+        if (audio.readyState >= 1) {
+          audio.currentTime = targetSec;
+          audio.play().catch(() => {});
+        } else {
+          audio.addEventListener('loadedmetadata', function onMeta() {
+            audio.removeEventListener('loadedmetadata', onMeta);
+            audio.currentTime = targetSec;
+            audio.play().catch(() => {});
+          });
+          audio.load();
+        }
+      }
+
+      function syncClassroomHighlight(t) {
+        const ep = episodes[state.currentEpIdx];
+        if (!ep) return;
+
+        let foundIdx = -1;
+        for (let i = 0; i < ep.turns.length; i++) {
+          const turn = ep.turns[i];
+          const nextStart = (i + 1 < ep.turns.length) ? ep.turns[i + 1].start : ep.duration + 1;
+          if (t >= turn.start - 0.08 && t < nextStart) {
+            foundIdx = i;
+            break;
+          }
+        }
+
+        if (foundIdx !== -1 && foundIdx !== activeTurnIdx) {
+          activeTurnIdx = foundIdx;
+          transcriptList.querySelectorAll('.turn-bubble').forEach((el, i) => {
+            el.classList.toggle('active-turn', i === foundIdx);
+          });
+          const activeTurnEl = document.getElementById(`turn-${foundIdx}`);
+          if (activeTurnEl && state.autoScroll) {
+            activeTurnEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+
+          const targetBoardId = ep.turns[foundIdx].boardId;
+          if (targetBoardId && targetBoardId !== activeBoardId) {
+            const prevBoard = activeBoardId;
+            activeBoardId = targetBoardId;
+            boardsContainer.querySelectorAll('.board-card').forEach(card => {
+              card.classList.toggle('is-active-board', card.getAttribute('data-board-id') === targetBoardId);
+            });
+            if (prevBoard !== null && state.autoScroll) {
+              const cardEl = document.getElementById(`card-${targetBoardId}`);
+              if (cardEl) {
+                const y = cardEl.getBoundingClientRect().top + window.scrollY - 82;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
+            }
+          }
+        }
+      }
+
+      audio.addEventListener('timeupdate', () => {
+        const t = audio.currentTime;
+        if (!isDraggingSlider) {
+          seekSlider.value = String(t);
+        }
+        curTimeEl.textContent = fmtTime(t);
+        syncClassroomHighlight(t);
+      });
+
+      audio.addEventListener('loadedmetadata', () => {
+        if (audio.duration && isFinite(audio.duration)) {
+          seekSlider.max = String(audio.duration);
+          durTimeEl.textContent = fmtTime(audio.duration);
+        }
+        audio.playbackRate = state.speed;
+      });
+
+      audio.addEventListener('play', () => {
+        playBtn.textContent = '⏸ 暂停';
+      });
+
+      audio.addEventListener('pause', () => {
+        playBtn.textContent = '▶ 继续听课';
+      });
+
+      audio.addEventListener('ended', () => {
+        const ep = episodes[state.currentEpIdx];
+        state.doneEps[ep.id] = true;
+        saveState();
+        renderEpisodeStrip();
+        if (state.autoPlayNext && state.currentEpIdx + 1 < episodes.length) {
+          loadEpisode(state.currentEpIdx + 1, true);
+        } else {
+          playBtn.textContent = '↺ 重听本讲';
+        }
+      });
+
+      playBtn.addEventListener('click', () => {
+        if (audio.paused) {
+          audio.play().catch(() => {});
+        } else {
+          audio.pause();
+        }
+      });
+
+      document.getElementById('rew-btn').addEventListener('click', () => {
+        audio.currentTime = Math.max(0, audio.currentTime - 10);
+      });
+
+      document.getElementById('fwd-btn').addEventListener('click', () => {
+        audio.currentTime = Math.min(audio.duration || 9999, audio.currentTime + 10);
+      });
+
+      document.getElementById('prev-ep-btn').addEventListener('click', () => {
+        if (state.currentEpIdx > 0) loadEpisode(state.currentEpIdx - 1, !audio.paused);
+      });
+
+      document.getElementById('next-ep-btn').addEventListener('click', () => {
+        if (state.currentEpIdx + 1 < episodes.length) loadEpisode(state.currentEpIdx + 1, !audio.paused);
+      });
+
+      seekSlider.addEventListener('input', () => {
+        isDraggingSlider = true;
+        curTimeEl.textContent = fmtTime(parseFloat(seekSlider.value));
+      });
+
+      seekSlider.addEventListener('change', () => {
+        audio.currentTime = parseFloat(seekSlider.value);
+        isDraggingSlider = false;
+      });
+
+      speedSelect.addEventListener('change', () => {
+        state.speed = parseFloat(speedSelect.value);
+        audio.playbackRate = state.speed;
+        saveState();
+      });
+
+      autoScrollBtn.addEventListener('click', () => {
+        state.autoScroll = !state.autoScroll;
+        autoScrollBtn.classList.toggle('on', state.autoScroll);
+        autoScrollBtn.textContent = state.autoScroll ? '🎯 自动跟随：开' : '🎯 自动跟随：关';
+      });
+
+      autoplayBtn.addEventListener('click', () => {
+        state.autoPlayNext = !state.autoPlayNext;
+        autoplayBtn.textContent = state.autoPlayNext ? '🔁 连播：开' : '🔁 连播：关';
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (['INPUT', 'SELECT', 'TEXTAREA'].includes(e.target.tagName)) return;
+        if (e.code === 'Space') {
+          e.preventDefault();
+          playBtn.click();
+        } else if (e.code === 'ArrowLeft') {
+          audio.currentTime = Math.max(0, audio.currentTime - 5);
+        } else if (e.code === 'ArrowRight') {
+          audio.currentTime = Math.min(audio.duration || 9999, audio.currentTime + 5);
+        }
+      });
+
+      loadEpisode(state.currentEpIdx, false);
+    })();
+  </script>
+</body>
+</html>
