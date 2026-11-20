@@ -2,11 +2,14 @@
 
 > **适用教材**：HKDSE 精工出版社（Jing Kung Educational Press）L.H.M. Chung《Mastering Chemistry》Book 3B · Topic 8 · **Unit 29 *Naming and physical properties of carbon compounds***
 
-## 🌐 在线访问地址（GitHub Pages）
+## 🌐 Topic 8 全系列有声互动预习课导航
 
-- **Unit 29 有声互动预习课堂主页**：<https://kenlin666bot.github.io/unit29-audio-preview/>
-- **姊妹篇 · Unit 31 有声互动预习课**：<https://kenlin666bot.github.io/unit31-audio-preview/>
-- **配套 Topic 7 & Topic 8 闯关学习站**：<https://kenlin666bot.github.io/mastering-organic-chem/>
+- **本单元 · Unit 29 碳化合物的命名及物理性质**：<https://kenlin666bot.github.io/unit29-audio-preview/>
+- **姊妹篇 · Unit 30 同分异构现象**：[本地打开](../Unit30_有声互动预习课/Unit30_有声互动预习课.html) ｜ [在线版](https://kenlin666bot.github.io/unit30-audio-preview/)
+- **姊妹篇 · Unit 31 各官能团的典型反应**：[本地打开](../Unit31_有声互动预习课/Unit31_有声互动预习课.html) ｜ [在线版](https://kenlin666bot.github.io/unit31-audio-preview/)
+- **姊妹篇 · Unit 32 碳化合物的合成**：[本地打开](../Unit32_有声互动预习课/Unit32_有声互动预习课.html) ｜ [在线版](https://kenlin666bot.github.io/unit32-audio-preview/)
+- **姊妹篇 · Unit 33 重要的有机物质**：[本地打开](../Unit33_有声互动预习课/Unit33_有声互动预习课.html) ｜ [在线版](https://kenlin666bot.github.io/unit33-audio-preview/)
+- **配套 Topic 7 & Topic 8 闯关学习站**：[本地打开](../Mastering_Chemistry_Topic7_8_学习站.html) ｜ <https://kenlin666bot.github.io/mastering-organic-chem/>
 
 ## ✨ 课程特色
 

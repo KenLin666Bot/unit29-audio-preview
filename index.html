@@ -102,15 +102,15 @@
     .top-actions {
       display: flex;
       align-items: center;
-      gap: 9px;
+      gap: 7px;
       flex-wrap: wrap;
     }
 
     .pill-link {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
+      gap: 5px;
+      padding: 5px 11px;
       border-radius: 999px;
       font-size: 12.5px;
       font-weight: 600;
@@ -132,6 +132,14 @@
       background: var(--primary-soft);
       border-color: #c7d2fe;
       color: var(--primary-dark);
+    }
+
+    .pill-link.active-unit-pill {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      cursor: default;
+      font-weight: 700;
     }
 
     .ep-strip-wrap {
@@ -880,8 +888,12 @@
       <a class="pill-link primary-pill" id="download-merged-link" href="#" download>📥 下载完整连听版 MP3 (<span id="total-dur-badge"></span>)</a>
       <a class="pill-link" id="download-ep-link" href="#" download>🎵 下载本讲 MP3</a>
       <a class="pill-link" id="handout-md-link" href="./Unit29_双语课堂讲义与逐字稿.md" target="_blank">📄 双语讲义逐字稿</a>
-      <a class="pill-link" id="unit31-site-link" href="../Unit31_有声互动预习课/Unit31_有声互动预习课.html">🎧 Unit 31 预习课</a>
-      <a class="pill-link" id="companion-site-link" href="../Mastering_Chemistry_Topic7_8_学习站.html">📖 打开 Topic 7 &amp; 8 闯关站</a>
+      <span class="pill-link active-unit-pill" title="当前单元：Unit 29 碳化合物的命名及物理性质">🎧 U29</span>
+      <a class="pill-link unit-jump-link" data-gh="https://kenlin666bot.github.io/unit30-audio-preview/" href="../Unit30_有声互动预习课/Unit30_有声互动预习课.html" title="Unit 30 同分异构现象">U30</a>
+      <a class="pill-link unit-jump-link" data-gh="https://kenlin666bot.github.io/unit31-audio-preview/" href="../Unit31_有声互动预习课/Unit31_有声互动预习课.html" title="Unit 31 各官能团的典型反应">U31</a>
+      <a class="pill-link unit-jump-link" data-gh="https://kenlin666bot.github.io/unit32-audio-preview/" href="../Unit32_有声互动预习课/Unit32_有声互动预习课.html" title="Unit 32 碳化合物的合成">U32</a>
+      <a class="pill-link unit-jump-link" data-gh="https://kenlin666bot.github.io/unit33-audio-preview/" href="../Unit33_有声互动预习课/Unit33_有声互动预习课.html" title="Unit 33 重要的有机物质">U33</a>
+      <a class="pill-link" id="companion-site-link" href="../Mastering_Chemistry_Topic7_8_学习站.html">📖 Topic 7 &amp; 8 闯关站</a>
     </div>
   </header>
 
@@ -982,13 +994,15 @@
       const downloadEp = document.getElementById('download-ep-link');
       const totalDurBadge = document.getElementById('total-dur-badge');
       const companionLink = document.getElementById('companion-site-link');
-      const unit31Link = document.getElementById('unit31-site-link');
       const handoutMdLink = document.getElementById('handout-md-link');
 
       if (/\.github\.io$/i.test(window.location.hostname)) {
         companionLink.href = 'https://kenlin666bot.github.io/mastering-organic-chem/';
-        unit31Link.href = 'https://kenlin666bot.github.io/unit31-audio-preview/';
         handoutMdLink.href = 'https://github.com/KenLin666Bot/unit29-audio-preview/blob/main/Unit29_%E5%8F%8C%E8%AF%AD%E8%AF%BE%E5%A0%82%E8%AE%B2%E4%B9%89%E4%B8%8E%E9%80%90%E5%AD%97%E7%A8%BF.md';
+        document.querySelectorAll('.unit-jump-link').forEach(a => {
+          const gh = a.getAttribute('data-gh');
+          if (gh) a.href = gh;
+        });
       }
 
       let isDraggingSlider = false;
